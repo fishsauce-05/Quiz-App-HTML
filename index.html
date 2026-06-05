@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-page">
+  <main class="home-shell">
+    <header class="home-header">
+      <p class="kicker">Practice Quiz</p>
+      <h1>Chọn môn ôn tập</h1>
+    </header>
+
+    <form id="startForm" class="home-form" action="practice.html">
+      <section class="home-section" aria-labelledby="subjectHeading">
+        <h2 id="subjectHeading">Môn học</h2>
+        <div id="subjectList" class="subject-list"></div>
+      </section>
+
+      <section class="home-section" aria-labelledby="limitHeading">
+        <h2 id="limitHeading">Số câu</h2>
+        <div class="limit-row">
+          <label for="questionLimit">Tối đa</label>
+          <input id="questionLimit" name="limit" type="number" min="1" value="20">
+          <span id="questionTotal" class="limit-total"></span>
+        </div>
+        <div class="quick-limits" aria-label="Chọn nhanh số câu">
+          <button type="button" data-limit="10">10 câu</button>
+          <button type="button" data-limit="20">20 câu</button>
+          <button type="button" data-limit="all">Tất cả</button>
+        </div>
+      </section>
+
+      <button class="primary-btn" type="submit">Bắt đầu</button>
+    </form>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
