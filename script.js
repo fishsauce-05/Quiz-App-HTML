@@ -209,7 +209,7 @@ function showResult() {
   if (percent === 100) {
     resultMessageEl.textContent = 'Ỉa lên đầu Hưng';
   }
-  if (percent >= 80) {
+  else if (percent >= 80) {
     resultMessageEl.textContent = 'Giỏi hơn Hưng rồi';
   } else if (percent >= 50) {
     resultMessageEl.textContent = 'Gần giỏi bằng Hưng rồi';
