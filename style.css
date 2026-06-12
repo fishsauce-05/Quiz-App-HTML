@@ -302,6 +302,7 @@ h2 {
   margin-top: 15px;
   font-weight: bold;
   min-height: 24px;
+  white-space: pre-line;
 }
 
 #nextBtn,

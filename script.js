@@ -61,8 +61,19 @@ function shuffleAnswers(question) {
   return {
     question: question.question,
     answers: shuffledAnswers,
-    correct: correctIndex
+    correct: correctIndex,
+    explanation: question.explanation || ''
   };
+}
+
+function buildFeedbackMessage(statusMessage, explanation) {
+  const trimmedExplanation = String(explanation || '').trim();
+
+  if (!trimmedExplanation) {
+    return statusMessage;
+  }
+
+  return `${statusMessage}\nGiải thích: ${trimmedExplanation}`;
 }
 
 function readLastOrder(storageKey) {
@@ -169,12 +180,12 @@ function checkAnswer(selectedIndex, selectedButton) {
   if (selectedIndex === currentQuestion.correct) {
     score++;
     selectedButton.classList.add('correct');
-    feedbackEl.textContent = 'Đúng rồi!';
+    feedbackEl.textContent = buildFeedbackMessage('Đúng rồi!', currentQuestion.explanation);
     feedbackEl.style.color = '#16a34a';
   } else {
     selectedButton.classList.add('wrong');
     buttons[currentQuestion.correct].classList.add('correct');
-    feedbackEl.textContent = 'Sai rồi!';
+    feedbackEl.textContent = buildFeedbackMessage('Sai rồi!', currentQuestion.explanation);
     feedbackEl.style.color = '#dc2626';
   }
 
