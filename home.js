@@ -114,7 +114,7 @@ startForm.addEventListener('submit', function(event) {
 
   const subject = selectedSubject();
   const limit = clampLimit(questionLimitEl.value, subject.questionCount);
-  const targetUrl = new URL('practice.html', window.location.href);
+  const targetUrl = new URL(startForm.getAttribute('action') || 'practice.html', window.location.href);
 
   targetUrl.searchParams.set('subject', subject.id);
   targetUrl.searchParams.set('limit', limit);

@@ -11,42 +11,22 @@
   <main class="home-shell">
     <header class="home-header">
       <p class="kicker">Practice Quiz</p>
-      <h1>Chọn môn ôn tập</h1>
+      <h1>Chọn danh mục ôn tập</h1>
     </header>
 
-    <form id="startForm" class="home-form" action="practice.html">
-      <section class="home-section" aria-labelledby="subjectHeading">
-        <h2 id="subjectHeading">Môn học</h2>
-        <div id="subjectList" class="subject-list"></div>
-      </section>
-
-      <section class="home-section" aria-labelledby="limitHeading">
-        <h2 id="limitHeading">Số câu</h2>
-        <div class="limit-row">
-          <label for="questionLimit">Tối đa</label>
-          <input id="questionLimit" name="limit" type="number" min="1" value="20">
-          <span id="questionTotal" class="limit-total"></span>
-        </div>
-        <div class="quick-limits" aria-label="Chọn nhanh số câu">
-          <button type="button" data-limit="10">10 câu</button>
-          <button type="button" data-limit="20">20 câu</button>
-          <button type="button" data-limit="all">Tất cả</button>
-        </div>
-      </section>
-
-      <button class="primary-btn" type="submit">Bắt đầu</button>
-    </form>
+    <section class="home-section" aria-labelledby="categoryHeading">
+      <h2 id="categoryHeading">Danh mục</h2>
+      <div class="category-list">
+        <a class="category-card" href="index/web/">
+          <span class="subject-badge">WEB</span>
+          <span class="subject-content">
+            <strong>Lập trình Web</strong>
+            <small>HTML, CSS, JavaScript, PHP, SQL, Bootstrap, jQuery</small>
+          </span>
+          <span class="subject-total">9 bộ</span>
+        </a>
+      </div>
+    </section>
   </main>
-  <script src="question/webQ.js"></script>
-  <script src="question/htmlQ.js"></script>
-  <script src="question/cssQ.js"></script>
-  <script src="question/jsQ.js"></script>
-  <script src="question/mysqlQ.js"></script>
-  <script src="question/phpQ.js"></script>
-  <script src="question/bootstrapQ.js"></script>
-  <script src="question/jqueryQ.js"></script>
-  <script src="questions.js"></script>
-  <script src="home.js"></script>
 </body>
 </html>
-
