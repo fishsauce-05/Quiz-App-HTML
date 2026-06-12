@@ -42,7 +42,7 @@ const subjectConfigs = [
     name: 'Lập trình Web',
     shortName: 'WEB',
     description: 'HTML, CSS, JavaScript, PHP, SQL, XML, Bootstrap, jQuery',
-    categoryPath: 'index/web/',
+    categoryPath: 'index/web.html',
     teacherName: webTeacherName
   },
   {
@@ -50,7 +50,7 @@ const subjectConfigs = [
     name: 'Tổng ôn web',
     shortName: 'ALL WEB',
     description: 'Trộn tất cả câu hỏi từ các bộ Practice',
-    categoryPath: 'index/web/',
+    categoryPath: 'index/web.html',
     teacherName: webTeacherName
   },
   {
@@ -58,7 +58,7 @@ const subjectConfigs = [
     name: 'HTML Practice',
     shortName: 'HTML',
     description: 'HTML elements, attributes, links, lists, forms, media',
-    categoryPath: 'index/web/',
+    categoryPath: 'index/web.html',
     teacherName: webTeacherName
   },
   {
@@ -66,7 +66,7 @@ const subjectConfigs = [
     name: 'CSS Practice',
     shortName: 'CSS',
     description: 'CSS selectors, syntax, text, spacing, borders, positioning',
-    categoryPath: 'index/web/',
+    categoryPath: 'index/web.html',
     teacherName: webTeacherName
   },
   {
@@ -74,7 +74,7 @@ const subjectConfigs = [
     name: 'JavaScript Practice',
     shortName: 'JS',
     description: 'JavaScript syntax, functions, loops, arrays, events',
-    categoryPath: 'index/web/',
+    categoryPath: 'index/web.html',
     teacherName: webTeacherName
   },
   {
@@ -82,7 +82,7 @@ const subjectConfigs = [
     name: 'MySQL Practice',
     shortName: 'SQL',
     description: 'MySQL statements, queries, filters, joins, constraints',
-    categoryPath: 'index/web/',
+    categoryPath: 'index/web.html',
     teacherName: webTeacherName
   },
   {
@@ -90,7 +90,7 @@ const subjectConfigs = [
     name: 'PHP Practice',
     shortName: 'PHP',
     description: 'PHP syntax, variables, forms, files, functions, arrays',
-    categoryPath: 'index/web/',
+    categoryPath: 'index/web.html',
     teacherName: webTeacherName
   },
   {
@@ -98,7 +98,7 @@ const subjectConfigs = [
     name: 'Bootstrap Practice',
     shortName: 'BOOT',
     description: 'Bootstrap grid, components, buttons, navbars, plugins',
-    categoryPath: 'index/web/',
+    categoryPath: 'index/web.html',
     teacherName: webTeacherName
   },
   {
@@ -106,7 +106,7 @@ const subjectConfigs = [
     name: 'jQuery Practice',
     shortName: 'JQ',
     description: 'jQuery selectors, methods, AJAX, events, animation',
-    categoryPath: 'index/web/',
+    categoryPath: 'index/web.html',
     teacherName: webTeacherName
   },
   {
@@ -114,7 +114,7 @@ const subjectConfigs = [
     name: 'Chủ nghĩa xã hội khoa học PTIT',
     shortName: 'CNXH',
     description: 'Bộ câu hỏi Chủ nghĩa xã hội khoa học PTIT',
-    categoryPath: 'index/cnxh/',
+    categoryPath: 'index/cnxh.html',
     teacherName: cnxhTeacherName
   }
 ];
