@@ -16,7 +16,9 @@ addQuestionBank('mysqlPractice', typeof mysqlQ === 'undefined' ? null : mysqlQ);
 addQuestionBank('phpPractice', typeof phpQ === 'undefined' ? null : phpQ);
 addQuestionBank('bootstrapPractice', typeof bootstrapQ === 'undefined' ? null : bootstrapQ);
 addQuestionBank('jqueryPractice', typeof jqueryQ === 'undefined' ? null : jqueryQ);
-addQuestionBank('cnxhPTIT', typeof cnxh_ptitBank === 'undefined' ? null : cnxh_ptitBank);
+addQuestionBank('cnxhPTIT', typeof cnxhPtitBank === 'undefined' ? null : cnxhPtitBank);
+addQuestionBank('cnxhChapter1', typeof cnxhChapter1 === 'undefined' ? null : cnxhChapter1);
+addQuestionBank('cnxhChapter2', typeof cnxhChapter2 === 'undefined' ? null : cnxhChapter2);
 
 const webPracticeQuestionBankIds = [
   'htmlPractice',
@@ -114,6 +116,22 @@ const subjectConfigs = [
     name: 'Chủ nghĩa xã hội khoa học PTIT',
     shortName: 'CNXH',
     description: 'Bộ câu hỏi Chủ nghĩa xã hội khoa học PTIT',
+    categoryPath: 'index/cnxh.html',
+    teacherName: cnxhTeacherName
+  },
+  {
+    id: 'cnxhChapter1',
+    name: 'CNXH Chương 1',
+    shortName: 'CH1',
+    description: 'Chương 1 - Những vấn đề chung về chủ nghĩa xã hội khoa học',
+    categoryPath: 'index/cnxh.html',
+    teacherName: cnxhTeacherName
+  },
+  {
+    id: 'cnxhChapter2',
+    name: 'CNXH Chương 2',
+    shortName: 'CH2',
+    description: 'Chương 2 - Giai cấp công nhân và phong trào công nhân quốc tế',
     categoryPath: 'index/cnxh.html',
     teacherName: cnxhTeacherName
   }

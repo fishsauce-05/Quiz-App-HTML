@@ -1,14 +1,14 @@
-const cnxh_ptitBank = [
+const cnxhPtitBank = [
 	{
 		question: "Nguồn gốc lý luận trực tiếp ra đời chủ nghĩa xã hội khoa học là",
 		answers: [
 			"Triết học cổ điển Đức",
 			"Kinh tế chính trị học cổ điển Anh",
-			"Chủ nghĩa xã hội không tưởng – phê phán Đang hoạt động",
-			"Cả a, b và c",
+			"Chủ nghĩa xã hội không tưởng – phê phán",
+			"Cả ba nội dung đã nêu",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 5 của chương 1 của tài liệu, chỉ ra rằng \"Chủ nghĩa không tưởng phê phán mà đại biểu là H.Xanh Ximông... là tiền đề lý luận\", từ nội dung này (và đối chiếu với nội dung lặp lại ở Câu 24), ta suy ra được là \"Đáp án C\" (Lưu ý: chữ \"Đang hoạt động\" trong đề là lỗi đánh máy từ chữ \"Pháp\").",
+		explanation: "Dựa trên trang số 5 của chương 1 của tài liệu, chủ nghĩa xã hội không tưởng – phê phán, mà đại biểu là H.Xanh Ximông, được xác định là tiền đề lý luận trực tiếp của chủ nghĩa xã hội khoa học.",
 	},
 	{
 		question: "Thực chất của TKQĐ lên CNXH là gì?",
@@ -16,10 +16,10 @@ const cnxh_ptitBank = [
 			"Là cuộc cải biến cách mạng về kinh tế",
 			"Là cuộc cải biến cách mạng về chính trị",
 			"Là cuộc cải biến cách mạng về tư tưởng và văn hoá",
-			"Tất cả các câu đều đúng",
+			"Tất cả các nội dung đã nêu đều đúng",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 45 và 46 của chương 3 của tài liệu, chỉ ra rằng \"Thực chất của thời kỳ quá độ lên chủ nghĩa xã hội là thời kỳ cải biến cách mạng... trên tất cả các lĩnh vực, kinh tế, chính trị, văn hóa, xã hội\", từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 45 và 46 của chương 3 của tài liệu, thời kỳ quá độ lên chủ nghĩa xã hội là thời kỳ cải biến cách mạng trên tất cả các lĩnh vực: kinh tế, chính trị, văn hóa và xã hội.",
 	},
 	{
 		question: "Thời kỳ quá độ lên chủ nghĩa xã hội trên phạm vi cả nước ta bắt đầu",
@@ -30,7 +30,7 @@ const cnxh_ptitBank = [
 			"2/1930",
 		],
 		correct: 2,
-		explanation: "Dựa trên phần Giải thích cuối tài liệu Trắc nghiệm, chỉ ra rằng \"Thời kỳ quá độ lên CNXH ở Việt Nam bắt đầu từ năm 1954 ở miền Bắc và từ năm 1975 trên phạm vi cả nước, sau khi đất nước đã hoàn toàn độc lập và cả nước thống nhất\", từ nội dung này, ta suy ra được là \"Đáp án C (tương ứng với thời điểm 4/1975 cho cả nước)\".",
+		explanation: "Dựa trên phần giải thích cuối tài liệu trắc nghiệm, thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam bắt đầu từ năm 1954 ở miền Bắc và từ năm 1975 trên phạm vi cả nước, sau khi đất nước hoàn toàn độc lập và thống nhất.",
 	},
 	{
 		question: "Dân chủ xã hội chủ nghĩa xuất hiện đầu tiên ở nước nào?",
@@ -41,7 +41,7 @@ const cnxh_ptitBank = [
 			"Mỹ",
 		],
 		correct: 2,
-		explanation: "Dựa trên phần Giải thích cuối tài liệu Trắc nghiệm, chỉ ra rằng \"Dân chủ xã hội chủ nghĩa xuất hiện đầu tiên ở nước Nga. Điều này đã xảy ra sau cách mạng tháng 10 Nga năm 1917\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên phần giải thích cuối tài liệu trắc nghiệm, dân chủ xã hội chủ nghĩa xuất hiện đầu tiên ở nước Nga sau Cách mạng tháng Mười Nga năm 1917.",
 	},
 	{
 		question: "Đặc trưng chính trị của nền dân chủ xã hội chủ nghĩa mang bản chất...",
@@ -52,7 +52,7 @@ const cnxh_ptitBank = [
 			"tầng lớp doanh nhân",
 		],
 		correct: 1,
-		explanation: "Dựa trên trang số 58 của chương 4 của tài liệu, chỉ ra rằng \"Dân chủ xã hội chủ nghĩa vừa có bản chất giai cấp công nhân, vừa có tính nhân dân rộng rãi, tính dân tộc sâu sắc\", từ nội dung này, ta suy ra được là \"Đáp án B\".",
+		explanation: "Dựa trên trang số 58 của chương 4 của tài liệu, dân chủ xã hội chủ nghĩa vừa có bản chất giai cấp công nhân, vừa có tính nhân dân rộng rãi và tính dân tộc sâu sắc.",
 	},
 	{
 		question: "Đặc trưng chính trị của nền dân chủ xã hội chủ nghĩa có tính...",
@@ -60,10 +60,10 @@ const cnxh_ptitBank = [
 			"nhân dân rộng rãi",
 			"dân tộc sâu sắc",
 			"Cách mạng",
-			"Cả A. B đều đúng",
+			"Cả tính nhân dân rộng rãi và tính dân tộc sâu sắc",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 58 của chương 4 của tài liệu và phần Giải thích cuối tài liệu Trắc nghiệm, chỉ ra rằng \"Tính nhân dân rộng rãi được thể hiện... Tính dân tộc sâu sắc được thể hiện...\", từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 58 của chương 4 của tài liệu và phần giải thích cuối tài liệu trắc nghiệm, đặc trưng chính trị của nền dân chủ xã hội chủ nghĩa bao gồm tính nhân dân rộng rãi và tính dân tộc sâu sắc.",
 	},
 	{
 		question: "Cơ sở kinh tế của nền dân chủ xã hội chủ nghĩa là ...",
@@ -71,10 +71,10 @@ const cnxh_ptitBank = [
 			"Chế độ tư hữu về tư liệu sản xuất chủ yếu",
 			"Chế độ sở hữu tập thể về tư liệu sản xuất chủ yếu",
 			"Chế độ công hữu về tư liệu sản xuất chủ yếu",
-			"Cả A, B, C",
+			"Tất cả các chế độ sở hữu đã nêu",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 58 của chương 4 của tài liệu, chỉ ra rằng \"Nền dân chủ xã hội chủ nghĩa dựa trên chế độ công hữu về tư liệu sản xuất chủ yếu của toàn xã hội\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 58 của chương 4 của tài liệu, nền dân chủ xã hội chủ nghĩa dựa trên chế độ công hữu về tư liệu sản xuất chủ yếu của toàn xã hội.",
 	},
 	{
 		question: "Dân chủ xã hội chủ nghĩa vừa mang tính... vừa mang tính... vừa mang tính...",
@@ -85,7 +85,7 @@ const cnxh_ptitBank = [
 			"Giai cấp... dân tộc... nhân dân",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 58 của chương 4 của tài liệu, chỉ ra rằng \"Dân chủ xã hội chủ nghĩa vừa có bản chất giai cấp công nhân, vừa có tính nhân dân rộng rãi, tính dân tộc sâu sắc\", từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 58 của chương 4 của tài liệu, dân chủ xã hội chủ nghĩa vừa có bản chất giai cấp công nhân, vừa có tính nhân dân rộng rãi và tính dân tộc sâu sắc.",
 	},
 	{
 		question: "Chọn phương án đúng nhất: Nhà nước xã hội chủ nghĩa mang",
@@ -96,7 +96,7 @@ const cnxh_ptitBank = [
 			"bản chất giai cấp công nhân, tính nhân dân rộng rãi và tính dân tộc sâu sắc.",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 60 của chương 4 của tài liệu, chỉ ra rằng \"Về chính trị: Nhà nước xã hội chủ nghĩa (nhà nước chuyên chính vô sản) mang bản chất của giai cấp công nhân, có tính nhân dân rộng rãi và tính dân tộc sâu sắc\", từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 60 của chương 4 của tài liệu, nhà nước xã hội chủ nghĩa mang bản chất của giai cấp công nhân, có tính nhân dân rộng rãi và tính dân tộc sâu sắc.",
 	},
 	{
 		question: "Chọn phương án đúng nhất: Hệ thống chính trị xã hội chủ nghĩa ở Việt Nam hiện nay bao gồm...",
@@ -107,7 +107,7 @@ const cnxh_ptitBank = [
 			"Đảng Cộng sản Việt Nam, Nhà nước xã hội chủ nghĩa, các tổ chức chính trị - xã hội.",
 		],
 		correct: 3,
-		explanation: "Dựa trên phần Giải thích cuối tài liệu Trắc nghiệm, chỉ ra rằng \"Hệ thống chính trị xã hội chủ nghĩa ở Việt Nam bao gồm Đảng Cộng Sản Việt Nam, Nhà nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam và các tổ chức chính trị xã hội...\", từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên phần giải thích cuối tài liệu trắc nghiệm, hệ thống chính trị xã hội chủ nghĩa ở Việt Nam bao gồm Đảng Cộng sản Việt Nam, Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam và các tổ chức chính trị - xã hội.",
 	},
 	{
 		question: "Điền vào chỗ trống: Trong xu hướng thứ nhất, do sự thức tỉnh và sự trưởng thành của ý thức dân tộc mà các cộng đồng dân cư muốn .... để xác lập dân tộc độc lập.",
@@ -118,7 +118,7 @@ const cnxh_ptitBank = [
 			"hợp nhất lại.",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 86 của chương 6 của tài liệu và phần Giải thích cuối tài liệu Trắc nghiệm, chỉ ra rằng \"cộng đồng dân cư muốn tách ra để hình thành cộng đồng dân tộc độc lập\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 86 của chương 6 của tài liệu và phần giải thích cuối tài liệu trắc nghiệm, trong xu hướng thứ nhất, các cộng đồng dân cư muốn tách ra để hình thành cộng đồng dân tộc độc lập.",
 	},
 	{
 		question: "Điền vào chỗ trống: Quyền bình đẳng giữa các dân tộc là quyền... của các dân tộc.",
@@ -129,7 +129,7 @@ const cnxh_ptitBank = [
 			"Cao cả.",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 87 của chương 6 của tài liệu, chỉ ra rằng \"Ý nghĩa: Là quyền cơ bản, thiêng liêng, là cơ sở để thực hiện quyền dân tộc tự quyết\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 87 của chương 6 của tài liệu, quyền bình đẳng giữa các dân tộc là quyền cơ bản, thiêng liêng và là cơ sở để thực hiện quyền dân tộc tự quyết.",
 	},
 	{
 		question: "Điền vào chỗ trống: Quyền dân tộc tự quyết là quyền ... đối với vận mệnh của dân tộc mình.",
@@ -140,7 +140,7 @@ const cnxh_ptitBank = [
 			"tự do phát triển",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 87 của chương 6 của tài liệu, chỉ ra rằng \"Là quyền của các dân tộc tự quyết định lấy vận mệnh của dân tộc mình\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 87 của chương 6 của tài liệu, quyền dân tộc tự quyết là quyền của các dân tộc tự quyết định lấy vận mệnh của dân tộc mình.",
 	},
 	{
 		question: "Chọn phương án đúng nhất: Dưới chủ nghĩa xã hội, tôn giáo vẫn tồn tại do các nguyên nhân:",
@@ -151,7 +151,7 @@ const cnxh_ptitBank = [
 			"Nhận thức, kinh tế, văn hoá, tư tưởng.",
 		],
 		correct: 1,
-		explanation: "Dựa trên phần Giải thích cuối tài liệu Trắc nghiệm, chỉ ra rằng \"Tôn giáo vẫn còn tồn tại dưới Chủ nghĩa Xã hội do các nguyên nhân như: + Nhận thức... + Tâm lý... + Chính trị... + Văn hóa\" (cùng với nguyên nhân Kinh tế ở trang 90, 91 Giáo trình), từ nội dung này, ta suy ra được là \"Đáp án B\".",
+		explanation: "Dựa trên phần giải thích cuối tài liệu trắc nghiệm và nội dung trang 90, 91 của giáo trình, tôn giáo vẫn còn tồn tại dưới chủ nghĩa xã hội do các nguyên nhân nhận thức, kinh tế, tâm lý, chính trị và văn hóa.",
 	},
 	{
 		question: "Trong chủ nghĩa xã hội cần phải...",
@@ -162,7 +162,7 @@ const cnxh_ptitBank = [
 			"hạn chế sự phát triển của tôn giáo",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 92 của chương 6 của tài liệu, chỉ ra rằng \"Nguyên tắc giải quyết vấn đề tôn giáo... Tôn trọng, bảo đảm quyền tự do tín ngưỡng và không tín ngưỡng của nhân dân\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 92 của chương 6 của tài liệu, nguyên tắc giải quyết vấn đề tôn giáo trong chủ nghĩa xã hội là tôn trọng và bảo đảm quyền tự do tín ngưỡng, không tín ngưỡng của nhân dân.",
 	},
 	{
 		question: "Sự bất lực của con người trước sức mạnh tự phát của tự nhiên và xã hội là nội dung của nguyên nhân nào lý giải sự tồn tại của tôn giáo trong tiến trình xây dựng chủ nghĩa xã hội?",
@@ -173,7 +173,7 @@ const cnxh_ptitBank = [
 			"Tâm lý",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 91 của chương 6 của tài liệu, chỉ ra rằng \"Nguồn gốc tự nhiên, kinh tế - xã hội... do không giải thích được... lo sợ trước sự thống trị của các lực lượng xã hội nên con người trông chờ vào sự giải phóng của một lực lượng siêu nhiên\", từ nội dung này, ta suy ra được là \"Đáp án C (hoặc A, vì cùng chung cụm nguồn gốc Kinh tế - Xã hội)\".",
+		explanation: "Dựa trên trang số 91 của chương 6 của tài liệu, sự bất lực của con người trước sức mạnh tự phát của tự nhiên và xã hội thuộc nguồn gốc tự nhiên, kinh tế - xã hội của tôn giáo. Trong các lựa chọn hiện có, nội dung này phù hợp nhất với nguyên nhân kinh tế.",
 	},
 	{
 		question: "Khoa học chưa lý giải được nhiều hiện tượng tự nhiên, xã hội và của con người là nội dung của nguyên nhân nào lý giải sự tồn tại của tôn giáo trong tiến trình xây dựng chủ nghĩa xã hội?",
@@ -184,7 +184,7 @@ const cnxh_ptitBank = [
 			"Nhận thức",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 91 của chương 6 của tài liệu, chỉ ra rằng \"Nguồn gốc nhận thức... khi những điều mà khoa học chưa giải thích được, thì điều đó thường được giải thích thông qua lăng kính các tôn giáo\", từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 91 của chương 6 của tài liệu, khi khoa học chưa giải thích được một số hiện tượng tự nhiên, xã hội và con người, các hiện tượng đó thường được giải thích thông qua lăng kính tôn giáo. Đây là nguyên nhân thuộc về nhận thức.",
 	},
 	{
 		question: "Chủ nghĩa xã hội là gì?",
@@ -193,10 +193,10 @@ const cnxh_ptitBank = [
 			"Là trào lưu tư tưởng, lý luận phản ánh lý tưởng giải phóng nhân dân lao động khỏi áp bức, bóc lột, bất công;",
 			"Là một khoa học - Chủ nghĩa xã hội khoa học;",
 			"Là một chế độ xã hội hiện thực tốt đẹp, xã hội xã hội chủ nghĩa",
-			"Cả A,B,C,D",
+			"Tất cả các nội dung đã nêu",
 		],
 		correct: 4,
-		explanation: "Dựa trên trang số 34 của chương 3 của tài liệu, chỉ ra rằng \"Chủ nghĩa xã hội được tiếp cận trên một số góc độ: Một là phong trào thực tiễn... Hai là trào lưu tư tưởng, lý luận... Ba là một khoa học... Bốn là một chế độ xã hội tốt đẹp\", từ nội dung này, ta suy ra được là \"Đáp án E\".",
+		explanation: "Dựa trên trang số 34 của chương 3 của tài liệu, chủ nghĩa xã hội có thể được tiếp cận trên nhiều góc độ: phong trào thực tiễn, trào lưu tư tưởng lý luận, một khoa học và một chế độ xã hội hiện thực tốt đẹp.",
 	},
 	{
 		question: "Phát minh nào không phải là một trong những tiền đề khoa học tự nhiên cho sự ra đời của chủ nghĩa xã hội khoa học?",
@@ -207,7 +207,7 @@ const cnxh_ptitBank = [
 			"Định luật bảo toàn và chuyển hóa năng lượng",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 4 và 5 của chương 1 của tài liệu, chỉ ra rằng \"Ba phát minh 'vạch thời đại' trong vật lý học và sinh học đó là: Học thuyết tiến hóa, Định luật bảo toàn và chuyển hóa năng lượng, Học thuyết tế bào\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 4 và 5 của chương 1 của tài liệu, ba phát minh vạch thời đại trong vật lý học và sinh học là học thuyết tế bào, học thuyết tiến hóa, định luật bảo toàn và chuyển hóa năng lượng. Thuyết nguyên tử không thuộc nhóm ba tiền đề này.",
 	},
 	{
 		question: "Tư tưởng xã hội chủ nghĩa là gì?",
@@ -215,10 +215,10 @@ const cnxh_ptitBank = [
 			"Là một hệ thống những quan niệm phản ánh những nhu cầu, những ước mơ, nguyện vọng của các giai cấp lao động về một xã hội không có áp bức và bóc lột",
 			"Là những thành tựu của con người đạt được trong quá trình đấu tranh giải phóng giai cấp.",
 			"Là chế độ xã hội không có áp bức bóc lột, mọi người đều bình đẳng tự do.",
-			"Cả a, b, c",
+			"Tất cả các nội dung đã nêu",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 34 của chương 3 của tài liệu, chỉ ra rằng \"trào lưu tư tưởng, lý luận phản ánh lý tưởng giải phóng nhân dân lao động khỏi áp bức, bóc lột, bất công\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 34 của chương 3 của tài liệu, tư tưởng xã hội chủ nghĩa là trào lưu tư tưởng, lý luận phản ánh lý tưởng giải phóng nhân dân lao động khỏi áp bức, bóc lột và bất công.",
 	},
 	{
 		question: "Những yếu tố tư tưởng XHCN được xuất hiện từ khi nào?",
@@ -229,7 +229,7 @@ const cnxh_ptitBank = [
 			"Thời cộng sản nguyên thủy",
 		],
 		correct: 1,
-		explanation: "Dựa trên nguyên lý chung (và xuyên suốt chương 1, chương 3) của tài liệu, đã chỉ ra rằng: Tư tưởng và khát vọng về CNXH xuất hiện khi bắt đầu có sự áp bức, bóc lột do chế độ tư hữu sinh ra. Từ nội dung này, ta suy ra được là \"Đáp án B\".",
+		explanation: "Dựa trên nguyên lý chung xuyên suốt chương 1 và chương 3 của tài liệu, tư tưởng và khát vọng về chủ nghĩa xã hội xuất hiện khi bắt đầu có sự áp bức, bóc lột do chế độ tư hữu sinh ra.",
 	},
 	{
 		question: "Đối tượng nghiên cứu của chủ nghĩa xã hội khoa học là gì?",
@@ -237,10 +237,10 @@ const cnxh_ptitBank = [
 			"Là những quy luật và tính quy luật chính trị – xã hội của quá trình phát sinh, hình thành và phát triển hình thái kinh tế - xã hội cộng sản chủ nghĩa",
 			"Là những quy luật kinh tế hình thành, phát triển và hoàn thiện của các hình thái kinh tế - xã hội.",
 			"Là những quy luật và tính quy luật chính trị – xã hội của quá trình phát sinh, hình thành và phát triển hình thái kinh tế - xã hội tư bản chủ nghĩa",
-			"Cả a, b và c",
+			"Tất cả các nội dung đã nêu",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 19 của chương 1 của tài liệu, chỉ ra rằng \"đối tượng nghiên cứu của Chủ nghĩa xã hội khoa học: những qui luật, tính qui luật chính trị - xã hội của quá trình phát sinh, hình thành và phát triển của hình thái kinh tế - xã hội cộng sản chủ nghĩa\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 19 của chương 1 của tài liệu, đối tượng nghiên cứu của chủ nghĩa xã hội khoa học là những quy luật, tính quy luật chính trị - xã hội của quá trình phát sinh, hình thành và phát triển hình thái kinh tế - xã hội cộng sản chủ nghĩa.",
 	},
 	{
 		question: "Hạn chế của chủ nghĩa xã hội không tưởng trước Mác là...",
@@ -248,10 +248,10 @@ const cnxh_ptitBank = [
 			"Chưa thấy được sứ mệnh lịch sử của giai cấp công nhân",
 			"Chưa chỉ ra được con đường đấu tranh cách mạng",
 			"Không luận chứng được một cách khoa học về bản chất của chủ nghĩa tư bản và quy luật phát triển của chủ nghĩa tư bản",
-			"Cả A.B.C",
+			"Tất cả các hạn chế đã nêu",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 5 của chương 1 của tài liệu, chỉ ra rằng \"Hạn chế: Thứ nhất, không phát hiện ra được quy luật vận động... bản chất, quy luật vận động, phát triển của chủ nghĩa tư bản... Thứ hai, không phát hiện ra lực lượng xã hội tiên phong... giai cấp công nhân; không chỉ ra được những biện pháp hiện thực cải tạo xã hội\", từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 5 của chương 1 của tài liệu, chủ nghĩa xã hội không tưởng trước Mác có các hạn chế: chưa phát hiện được quy luật vận động của chủ nghĩa tư bản, chưa thấy được lực lượng xã hội tiên phong là giai cấp công nhân và chưa chỉ ra được biện pháp hiện thực để cải tạo xã hội.",
 	},
 	{
 		question: "Nguồn gốc lý luận trực tiếp ra đời chủ nghĩa xã hội khoa học là....",
@@ -259,10 +259,10 @@ const cnxh_ptitBank = [
 			"Triết học cổ điển Đức",
 			"Kinh tế chính trị học cổ điển Anh",
 			"Chủ nghĩa xã hội không tưởng – phê phán",
-			"Cả a, b và c",
+			"Cả ba nội dung đã nêu",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 5 của chương 1 của tài liệu, chỉ ra rằng \"Chủ nghĩa không tưởng phê phán... là tiền đề lý luận\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 5 của chương 1 của tài liệu, chủ nghĩa xã hội không tưởng – phê phán được xác định là tiền đề lý luận trực tiếp cho sự ra đời của chủ nghĩa xã hội khoa học.",
 	},
 	{
 		question: "Ai là người đã có công lao biến chủ nghĩa xã hội từ khoa học trở thành hiện thực?",
@@ -273,7 +273,7 @@ const cnxh_ptitBank = [
 			"Hồ Chí Minh",
 		],
 		correct: 2,
-		explanation: "Dựa trên phần Giải thích cuối tài liệu Trắc nghiệm (và trang 10, chương 1), chỉ ra rằng \"Vai trò của Lê nin là đưa chủ nghĩa xã hội khoa học từ góc độ lý luận trở thành hiện thực sau sự kiện cách mạng tháng 10 Nga năm 1917\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên phần giải thích cuối tài liệu trắc nghiệm và trang số 10 của chương 1, V.I. Lênin có vai trò đưa chủ nghĩa xã hội khoa học từ lý luận trở thành hiện thực sau Cách mạng tháng Mười Nga năm 1917.",
 	},
 	{
 		question: "Ai là người đã có công lao biến chủ nghĩa xã hội từ không tưởng trở thành khoa học?",
@@ -281,10 +281,10 @@ const cnxh_ptitBank = [
 			"C. Mác và Ph. Ăngghen",
 			"V.ILênin",
 			"Hồ Chí Minh",
-			"Cả A,B,C",
+			"Tất cả các nhân vật đã nêu",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 10 của chương 1 của tài liệu, chỉ ra rằng \"công lao của C.Mác và Ph.Ăngghen là phát triển chủ nghĩa xã hội từ không tưởng thành khoa học\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 10 của chương 1 của tài liệu, C. Mác và Ph. Ăngghen có công lao phát triển chủ nghĩa xã hội từ không tưởng thành khoa học.",
 	},
 	{
 		question: "Trong phương thức sản xuất tư bản chủ nghĩa, mâu thuẫn trong lĩnh vực kinh tế là mâu thuẫn giữa....",
@@ -295,7 +295,7 @@ const cnxh_ptitBank = [
 			"Lực lượng sản xuất mang tính cá nhân với quan hệ sản xuất mang tính tư nhân tư bản chủ nghĩa",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 36 của chương 3 của tài liệu, chỉ ra rằng \"lực lượng sản xuất càng được cơ khi hóa, hiện đại hóa càng mang tính xã hội hóa cao, thì càng mâu thuẫn với quan hệ sản xuất tư bản chủ nghĩa dựa trên chế độ chiếm hữu tư nhân tư bản chủ nghĩa\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 36 của chương 3 của tài liệu, lực lượng sản xuất trong chủ nghĩa tư bản ngày càng mang tính xã hội hóa cao, nhưng quan hệ sản xuất lại dựa trên chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất.",
 	},
 	{
 		question: "Quy luật chính trị - xã hội phản ánh quan hệ nào sau đây?",
@@ -306,7 +306,7 @@ const cnxh_ptitBank = [
 			"Quan hệ giữa các tổ chức trong xã hội",
 		],
 		correct: 1,
-		explanation: "Dựa trên trang số 18 và 19 của chương 1 của tài liệu, đã chỉ ra rằng: Đối tượng của CNXHKH là quy luật chính trị - xã hội, phản ánh con đường, hình thức, phương pháp đấu tranh cách mạng của giai cấp công nhân và các tầng lớp nhân dân (tức quan hệ giữa các giai cấp, tầng lớp). Từ nội dung này, ta suy ra được là \"Đáp án B\".",
+		explanation: "Dựa trên trang số 18 và 19 của chương 1 của tài liệu, đối tượng của chủ nghĩa xã hội khoa học là các quy luật chính trị - xã hội, phản ánh con đường, hình thức và phương pháp đấu tranh cách mạng của giai cấp công nhân cùng các tầng lớp nhân dân.",
 	},
 	{
 		question: "Một trong những đóng góp của V.I. Lênin đối với chủ nghĩa xã hội khoa học là...",
@@ -317,7 +317,7 @@ const cnxh_ptitBank = [
 			"Xây dựng lý luận về đảng của các dân tộc thuộc địa và phụ thuộc",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 11 của chương 1 của tài liệu, chỉ ra rằng \"V.I.Lênin đã xây dựng lý luận về đảng cách mạng kiểu mới của giai cấp công nhân\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 11 của chương 1 của tài liệu, V.I. Lênin đã xây dựng lý luận về đảng cách mạng kiểu mới của giai cấp công nhân.",
 	},
 	{
 		question: "Một trong những đóng góp của V.I. Lênin đối với chủ nghĩa xã hội khoa học là gì?",
@@ -328,7 +328,7 @@ const cnxh_ptitBank = [
 			"Xây dựng lý luận về cách mạng xã hội kiểu mới",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 11 của chương 1 của tài liệu, chỉ ra rằng \"V.I.Lênin đã hoàn chỉnh lý luận về cách mạng xã hội chủ nghĩa và chuyên chính vô sản, cách mạng dân chủ tư sản kiểu mới...\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 11 của chương 1 của tài liệu, V.I. Lênin đã hoàn chỉnh lý luận về cách mạng xã hội chủ nghĩa, chuyên chính vô sản và cách mạng dân chủ tư sản kiểu mới.",
 	},
 	{
 		question: "Cuộc cách mạng công nghiệp lần thứ nhất trong phương thức sản xuất tư bản chủ nghĩa diễn ra đầu tiên ở quốc gia nào?",
@@ -339,7 +339,7 @@ const cnxh_ptitBank = [
 			"Nga.",
 		],
 		correct: 0,
-		explanation: "Dựa trên kiến thức chung và trang số 5 của chương 1 của tài liệu, đã chỉ ra rằng: Cách mạng công nghiệp ra đời sớm nhất gắn với tư tưởng \"Kinh tế chính trị học cổ điển Anh\". Từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên kiến thức chung và trang số 5 của chương 1 của tài liệu, cuộc cách mạng công nghiệp lần thứ nhất diễn ra đầu tiên ở Anh, gắn với sự phát triển sớm của chủ nghĩa tư bản và kinh tế chính trị học cổ điển Anh.",
 	},
 	{
 		question: "Đối tượng nghiên cứu của chủ nghĩa xã hội khoa học là:",
@@ -347,10 +347,10 @@ const cnxh_ptitBank = [
 			"Những quy luật kinh tế của phương thức sản xuất tư bản chủ nghĩa và sự ra đời của phương thức sản xuất mới - phương thức sản xuất cộng sản chủ nghĩa",
 			"Những quy luật khách quan của quá trình cách mạng xã hội chủ nghĩa.",
 			"Những quy luật vận động, phát triển chung nhất của tự nhiên, xã hội và tư duy.",
-			"Cả A, B, C đều sai",
+			"Tất cả các phương án đã nêu đều sai",
 		],
 		correct: 3,
-		explanation: "Dựa trên phần Giải thích cuối tài liệu Trắc nghiệm, chỉ ra rằng \"Chủ nghĩa Xã hội Khoa học không chỉ nghiên cứu quy luật kinh tế mà còn bao gồm cả những quy luật chính trị xã hội của quá trình phát triển của Chủ nghĩa Tư bản sang chủ nghĩa Xã hội...\", do các đáp án A, B, C đều chưa mô tả chính xác và đầy đủ, từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên phần giải thích cuối tài liệu trắc nghiệm, chủ nghĩa xã hội khoa học không chỉ nghiên cứu quy luật kinh tế mà còn nghiên cứu các quy luật chính trị - xã hội của quá trình phát triển từ chủ nghĩa tư bản lên chủ nghĩa xã hội. Các lựa chọn còn lại chưa mô tả chính xác và đầy đủ đối tượng nghiên cứu này.",
 	},
 	{
 		question: "Một trong những đóng góp quan trọng của Đảng Cộng sản Việt Nam vào lý luận của chủ nghĩa xã hội khoa học là...",
@@ -361,7 +361,7 @@ const cnxh_ptitBank = [
 			"Tư tưởng đoàn kết",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 16 của chương 1 của tài liệu, chỉ ra rằng \"Độc lập dân tộc gắn liền với chủ nghĩa xã hội là quy luật của cách mạng Việt Nam\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 16 của chương 1 của tài liệu, độc lập dân tộc gắn liền với chủ nghĩa xã hội được xác định là quy luật của cách mạng Việt Nam.",
 	},
 	{
 		question: "Chọn phương án đúng nhất: Trong chế độ tư bản chủ nghĩa, giai cấp công nhân là giai cấp tiên phong cách mạng vì họ là giai cấp:",
@@ -369,10 +369,10 @@ const cnxh_ptitBank = [
 			"Đại biểu cho phương thức sản xuất tiên tiến",
 			"Được trang bị lý luận khoa học cách mạng",
 			"Luôn đi đầu trong mọi phong trào cách mạng",
-			"Cả A, B, C",
+			"Tất cả các đặc điểm đã nêu",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 23 của chương 2 của tài liệu, chỉ ra rằng \"giai cấp công nhân là đại biểu cho lực lượng sản xuất tiên tiến, cho phương thức sản xuất tiên tiến... có những phẩm chất đặc biệt... Đó là một giai cấp cách mạng và có tinh thần cách mạng triệt để\", từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 23 của chương 2 của tài liệu, giai cấp công nhân là đại biểu cho lực lượng sản xuất tiên tiến, cho phương thức sản xuất tiên tiến, được trang bị lý luận khoa học cách mạng và có tinh thần cách mạng triệt để.",
 	},
 	{
 		question: "Chọn phương án đúng nhất: Trong chế độ tư bản chủ nghĩa, giai cấp công nhân có thể đoàn kết nội bộ giai cấp vì họ có chung:",
@@ -380,10 +380,10 @@ const cnxh_ptitBank = [
 			"Địa vị kinh tế - xã hội",
 			"Điều kiện làm việc",
 			"Điều kiện sống",
-			"Cả A, B, C",
+			"Tất cả các yếu tố đã nêu",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 26 của chương 2 của tài liệu, chỉ ra rằng \"Trong xã hội tư bản chủ nghĩa, giai cấp công nhân không có tư liệu sản xuất chủ yếu, phải bán sức lao động... (thuộc về Địa vị kinh tế - xã hội của giai cấp công nhân)\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 26 của chương 2 của tài liệu, trong xã hội tư bản chủ nghĩa, giai cấp công nhân không có tư liệu sản xuất chủ yếu và phải bán sức lao động, nên sự đoàn kết nội bộ giai cấp bắt nguồn cơ bản từ địa vị kinh tế - xã hội chung.",
 	},
 	{
 		question: "Chọn phương án đúng nhất: Trong chế độ tư bản chủ nghĩa, giai cấp công nhân có thể đoàn kết với các giai cấp, tầng lớp lao động khác vì họ:",
@@ -391,10 +391,10 @@ const cnxh_ptitBank = [
 			"Có chung lợi ích kinh tế",
 			"Đều bị giai cấp tư sản bóc lột",
 			"Có chung nguyện vọng được giải phóng",
-			"Cả A, B, C",
+			"Tất cả các lý do đã nêu",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 24 của chương 2 của tài liệu, đã chỉ ra rằng: Sự đoàn kết giữa giai cấp công nhân và các tầng lớp lao động khác bắt nguồn từ việc họ cùng chung lợi ích, cùng bị bóc lột và có chung mục tiêu chống bất công, giải phóng xã hội. Từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 24 của chương 2 của tài liệu, sự đoàn kết giữa giai cấp công nhân và các tầng lớp lao động khác bắt nguồn từ việc họ cùng có lợi ích, cùng chịu sự bóc lột và cùng có mục tiêu chống bất công, giải phóng xã hội.",
 	},
 	{
 		question: "Nguyên nhân sâu xa dẫn đến sự thay thế hình thái kinh tế - xã hội tư bản chủ nghĩa bằng hình thái kinh tế - xã hội cộng sản chủ nghĩa là gì?",
@@ -405,7 +405,7 @@ const cnxh_ptitBank = [
 			"Mâu thuẫn giữa các giai cấp, tầng lớp lao động trong xã hội",
 		],
 		correct: 1,
-		explanation: "Dựa trên trang số 36 của chương 3 của tài liệu, chỉ ra rằng \"lực lượng sản xuất càng được cơ khi hóa, hiện đại hóa càng mang tính xã hội hóa cao, thì càng mâu thuẫn với quan hệ sản xuất tư bản chủ nghĩa dựa trên chế độ chiếm hữu tư nhân tư bản chủ nghĩa\", từ nội dung này, ta suy ra được là \"Đáp án B\".",
+		explanation: "Dựa trên trang số 36 của chương 3 của tài liệu, nguyên nhân sâu xa của sự thay thế hình thái kinh tế - xã hội tư bản chủ nghĩa là mâu thuẫn giữa lực lượng sản xuất ngày càng xã hội hóa cao với quan hệ sản xuất tư bản chủ nghĩa dựa trên chế độ chiếm hữu tư nhân tư bản chủ nghĩa.",
 	},
 	{
 		question: "Tiền đề vật chất cho sự ra đời của chủ nghĩa xã hội là gì?",
@@ -416,7 +416,7 @@ const cnxh_ptitBank = [
 			"Là xã hội hóa lực lượng sản xuất",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 36 của chương 3 của tài liệu, chỉ ra rằng \"càng mang tính xã hội hóa cao, thì càng mâu thuẫn... Sự phát triển của lực lượng sản xuất... là tiền đề, điều kiện cho sự ra đời của hình thái KT-XH cộng sản chủ nghĩa\", từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 36 của chương 3 của tài liệu, sự phát triển của lực lượng sản xuất với tính xã hội hóa ngày càng cao là tiền đề vật chất cho sự ra đời của hình thái kinh tế - xã hội cộng sản chủ nghĩa.",
 	},
 	{
 		question: "Chỉ ra luận điểm chính xác nhất ?",
@@ -427,7 +427,7 @@ const cnxh_ptitBank = [
 			"Xã hội xã hội chủ nghĩa thực hiện xóa bỏ chế độ tư hữu tư bản",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 25 của chương 2 của tài liệu, chỉ ra rằng \"xóa bỏ triệt để chế độ tư hữu về tư liệu sản xuất\" (cụ thể là tư hữu tư bản chủ nghĩa), từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 25 của chương 2 của tài liệu, xã hội xã hội chủ nghĩa hướng tới xóa bỏ chế độ tư hữu về tư liệu sản xuất, cụ thể là chế độ tư hữu tư bản chủ nghĩa.",
 	},
 	{
 		question: "Đặc điểm chủ yếu của thời kỳ quá độ lên chủ nghĩa xã hội là gì?",
@@ -438,18 +438,18 @@ const cnxh_ptitBank = [
 			"Tồn tại kinh tế thị trường định hướng xã hội chủ nghĩa, ở đó, các chủ thể kinh tế đều chịu sự chi phối của quy luật thị trường",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 46 của chương 3 của tài liệu, chỉ ra rằng \"Xã hội của thời kỳ quá độ là xã hội có sự đan xen của nhiều tàn dư về mọi phương diện... và những yếu tố mới mang tính chất xã hội chủ nghĩa\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 46 của chương 3 của tài liệu, xã hội trong thời kỳ quá độ có sự đan xen giữa những tàn dư của xã hội cũ và những yếu tố mới mang tính chất xã hội chủ nghĩa trên mọi lĩnh vực của đời sống xã hội.",
 	},
 	{
 		question: "Dân chủ là gì?",
 		answers: [
 			"Là công bằng trong xã hội và thực thi công bằng trong xã hội thi quyền làm chủ của nhân dân",
-			"Là quyền lực thuộc về nhân dân và [thực thi quyền làm chủ của nhân dân - in theo đính chính ở trang cuối]",
+			"Là quyền lực thuộc về nhân dân và thực thi quyền làm chủ của nhân dân",
 			"Là tự do của công dân và đảm bảo tự do cho công dân",
 			"Là bình đẳng của công dân và thực thi bình đẳng cho công dân",
 		],
 		correct: 1,
-		explanation: "Dựa trên phần Giải thích cuối tài liệu Trắc nghiệm (đính chính lỗi đánh máy) và trang số 56 của chương 4 của tài liệu, chỉ ra rằng \"Dân chủ xuất phát từ chữ Hylạp “Demokratos”, có nghĩa là quyền lực thuộc về nhân dân\", từ nội dung này, ta suy ra được là \"Đáp án B\".",
+		explanation: "Dựa trên phần giải thích cuối tài liệu trắc nghiệm và trang số 56 của chương 4 của tài liệu, dân chủ xuất phát từ chữ Hy Lạp \"Demokratos\", có nghĩa là quyền lực thuộc về nhân dân.",
 	},
 	{
 		question: "Chế độ dân chủ đầu tiên ra đời gắn với xã hội nào?",
@@ -460,7 +460,7 @@ const cnxh_ptitBank = [
 			"Xã hội tư bản chủ nghĩa",
 		],
 		correct: 1,
-		explanation: "Dựa trên trang số 57 của chương 4 của tài liệu, chỉ ra rằng \"Trong chế độ chiếm hữu nô lệ: khi trình độ của lực lượng sản xuất phát triển, sự ra đời chế độ tư hữu, nền dân chủ chủ nô ra đời\", từ nội dung này, ta suy ra được là \"Đáp án B\".",
+		explanation: "Dựa trên trang số 57 của chương 4 của tài liệu, khi trình độ lực lượng sản xuất phát triển, chế độ tư hữu ra đời trong xã hội chiếm hữu nô lệ và nền dân chủ chủ nô xuất hiện.",
 	},
 	{
 		question: "Sự ra đời của nhà nước xã hội chủ nghĩa gắn với sự kiện nào?",
@@ -471,7 +471,7 @@ const cnxh_ptitBank = [
 			"Giai cấp công nhân đấu tranh đòi tăng lương, giảm giờ làm, cải thiện điều kiện lao động",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 60 của chương 4 của tài liệu, chỉ ra rằng \"nhà nước xã hội chủ nghĩa ra đời là kết quả của cuộc cách mạng do giai cấp vô sản và nhân dân lao động tiến hành...\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 60 của chương 4 của tài liệu, nhà nước xã hội chủ nghĩa ra đời là kết quả của cuộc cách mạng do giai cấp vô sản và nhân dân lao động tiến hành nhằm lật đổ nhà nước của giai cấp bóc lột và giành chính quyền.",
 	},
 	{
 		question: "Bản chất của nhà nước xã hội chủ nghĩa là gì?",
@@ -482,7 +482,7 @@ const cnxh_ptitBank = [
 			"Nhà nước xã hội chủ nghĩa mang bản chất chính trị của các giai cấp, tầng lớp trong lịch sử",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 60 của chương 4 của tài liệu, chỉ ra rằng \"Về chính trị: Nhà nước xã hội chủ nghĩa... mang bản chất của giai cấp công nhân, có tính nhân dân rộng rãi và tính dân tộc sâu sắc\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 60 của chương 4 của tài liệu, về chính trị, nhà nước xã hội chủ nghĩa mang bản chất của giai cấp công nhân, có tính nhân dân rộng rãi và tính dân tộc sâu sắc.",
 	},
 	{
 		question: "Cơ sở kinh tế của nền dân chủ xã hội chủ nghĩa là:",
@@ -493,7 +493,7 @@ const cnxh_ptitBank = [
 			"Chế độ chiếm hữu tư nhân về ruộng đất",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 58 của chương 4 của tài liệu, chỉ ra rằng \"Nền dân chủ xã hội chủ nghĩa dựa trên chế độ công hữu về tư liệu sản xuất chủ yếu của toàn xã hội\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 58 của chương 4 của tài liệu, nền dân chủ xã hội chủ nghĩa dựa trên chế độ công hữu về tư liệu sản xuất chủ yếu của toàn xã hội.",
 	},
 	{
 		question: "Kiểu nhà nước nào sau đây được V.I. Lênin gọi là nhà nước “nửa nhà nước”?",
@@ -504,7 +504,7 @@ const cnxh_ptitBank = [
 			"Nhà nước xã hội chủ nghĩa",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 64 của chương 4 của tài liệu, đã chỉ ra rằng: Tại mục câu hỏi ôn tập, câu số 4 nhắc tới \"Vì sao nhà nước xã hội chủ nghĩa được Lênin gọi là nhà nước 'nửa nhà nước'\". Từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 64 của chương 4 của tài liệu, phần câu hỏi ôn tập có nội dung về việc vì sao nhà nước xã hội chủ nghĩa được Lênin gọi là nhà nước \"nửa nhà nước\".",
 	},
 	{
 		question: "Cơ sở kinh tế của nhà nước xã hội chủ nghĩa là gì?",
@@ -515,7 +515,7 @@ const cnxh_ptitBank = [
 			"Chế độ sở hữu tập thể về tư liệu sản xuất",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 60 của chương 4 của tài liệu, chỉ ra rằng \"Về kinh tế: Nhà nước xã hội chủ nghĩa có cơ sở kinh tế là chế độ công hữu về tư liệu sản xuất chủ yếu\" (Công hữu đồng nghĩa với sở hữu xã hội), từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 60 của chương 4 của tài liệu, cơ sở kinh tế của nhà nước xã hội chủ nghĩa là chế độ công hữu về tư liệu sản xuất chủ yếu, tức chế độ sở hữu xã hội.",
 	},
 	{
 		question: "Công cụ hữu hiệu nhất để Nhà nước pháp quyền xã hội chủ nghĩa quản lý xã hội là gì?",
@@ -526,7 +526,7 @@ const cnxh_ptitBank = [
 			"Chủ trương",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 62 của chương 4 của tài liệu, chỉ ra rằng \"Nhà nước pháp quyền được hiểu là nhà nước mà ở đó, tất cả mọi công dân đều được giáo dục pháp luật và phải hiểu biết pháp luật, tuân thủ pháp luật\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 62 của chương 4 của tài liệu, nhà nước pháp quyền được tổ chức và hoạt động trên cơ sở pháp luật, công dân được giáo dục pháp luật, hiểu biết pháp luật và tuân thủ pháp luật.",
 	},
 	{
 		question: "Đặc điểm của nhà nước pháp quyền xã hội chủ nghĩa là gì?",
@@ -537,7 +537,7 @@ const cnxh_ptitBank = [
 			"Quản lý xã hội bằng niềm tin",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 62 của chương 4 của tài liệu, chỉ ra rằng \"Được tổ chức và hoạt động dựa trên cơ sở của Hiến pháp và pháp luật\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 62 của chương 4 của tài liệu, nhà nước pháp quyền xã hội chủ nghĩa được tổ chức và hoạt động dựa trên cơ sở Hiến pháp và pháp luật.",
 	},
 	{
 		question: "Vì sao giai cấp công nhân, giai cấp nông dân và các tầng lớp lao động lại liên minh với nhau trong thời kỳ quá độ lên chủ nghĩa xã hội?",
@@ -548,7 +548,7 @@ const cnxh_ptitBank = [
 			"Vì giai cấp công nhân, giai cấp nông dân và các tầng lớp lao động đều có trình độ văn hóa cao",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 70 của chương 5 của tài liệu, chỉ ra rằng \"mỗi giai cấp đứng ở vị trí trung tâm đều phải tìm cách liên minh với các giai cấp, tầng lớp xã hội khác có những lợi ích phù hợp với mình để tập hợp lực lượng thực hiện những nhu cầu và lợi ích chung\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 70 của chương 5 của tài liệu, trong thời kỳ quá độ lên chủ nghĩa xã hội, các giai cấp và tầng lớp lao động liên minh với nhau do có những lợi ích phù hợp và mục đích chung trong quá trình xây dựng xã hội mới.",
 	},
 	{
 		question: "Vì sao các giai cấp, tầng lớp trong thời kỳ quá độ lên chủ nghĩa xã hội vừa có sự đấu tranh vừa có sự liên minh?",
@@ -559,7 +559,7 @@ const cnxh_ptitBank = [
 			"Vì hệ tư tưởng của các giai cấp, tầng lớp trong thời kỳ quá độ lên CNXH có mâu thuẫn với nhau.",
 		],
 		correct: 2,
-		explanation: "Dựa trên trang số 69 của chương 5 của tài liệu, chỉ ra rằng \"cơ cấu xã hội - giai cấp biến đổi và phát triển trong mối quan hệ vừa có mâu thuẫn, đấu tranh, vừa có mối quan hệ liên minh với nhau\", từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên trang số 69 của chương 5 của tài liệu, cơ cấu xã hội - giai cấp trong thời kỳ quá độ biến đổi trong mối quan hệ vừa có mâu thuẫn, đấu tranh, vừa có liên minh với nhau.",
 	},
 	{
 		question: "Giai cấp công nhân Việt Nam trong thời kỳ quá độ lên chủ nghĩa xã hội biến đổi theo xu hướng nào?",
@@ -570,7 +570,7 @@ const cnxh_ptitBank = [
 			"Xu hướng khu vực hóa",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 27 của chương 2 của tài liệu, chỉ ra rằng \"Xu hướng “trí tuệ hóa” tăng nhanh\" (và trung lưu hóa), từ nội dung này, ta suy ra được là \"Đáp án A\" (dù trong đề có lỗi lặp từ \"trí thức hóa\").",
+		explanation: "Dựa trên trang số 27 của chương 2 của tài liệu, giai cấp công nhân Việt Nam có xu hướng trí tuệ hóa tăng nhanh. Trong đề, cụm \"trí thức hóa và trí thức hóa\" có lỗi lặp từ.",
 	},
 	{
 		question: "Chọn phương án đúng nhất: Theo quan điểm của chủ nghĩa Mác - Lênin, động lực của cách mạng xã hội chủ nghĩa là:",
@@ -581,7 +581,7 @@ const cnxh_ptitBank = [
 			"Giai cấp công nhân và giai cấp nông dân",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 70 của chương 5 của tài liệu, chỉ ra rằng \"liên minh với 'người bạn đồng minh tự nhiên' của mình là giai cấp nông dân\", từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 70 của chương 5 của tài liệu, giai cấp công nhân liên minh với người bạn đồng minh tự nhiên của mình là giai cấp nông dân trong cách mạng xã hội chủ nghĩa.",
 	},
 	{
 		question: "Chỉ ra luận điểm không chính xác?",
@@ -592,7 +592,7 @@ const cnxh_ptitBank = [
 			"Quyền bình đẳng và quyền tự quyết dân tộc đi liền với nhau",
 		],
 		correct: 1,
-		explanation: "Dựa trên trang số 87 của chương 6 của tài liệu, đã chỉ ra rằng: Quyền tự quyết là quyền cơ bản của \"các dân tộc tự quyết định lấy vận mệnh của dân tộc mình\". Việc cho rằng nó là \"ảo tưởng\" đối với dân tộc kém phát triển là đi ngược với lý luận cơ bản. Từ nội dung này, ta suy ra được là \"Đáp án B\".",
+		explanation: "Dựa trên trang số 87 của chương 6 của tài liệu, quyền tự quyết là quyền cơ bản của các dân tộc trong việc tự quyết định vận mệnh của dân tộc mình. Vì vậy, quan điểm cho rằng quyền tự quyết dân tộc là ảo tưởng đối với các dân tộc kém phát triển là không chính xác.",
 	},
 	{
 		question: "Yếu tố nào quyết định đến thực hiện quyền bình đẳng dân tộc?",
@@ -603,7 +603,7 @@ const cnxh_ptitBank = [
 			"Các đảng chính trị có đường lối đúng đắn định hướng quan hệ dân tộc",
 		],
 		correct: 1,
-		explanation: "Dựa trên phần Giải thích cuối tài liệu Trắc nghiệm, chỉ ra rằng \"Trong tuyên ngôn, Mác đã chỉ ra rằng, để thực hiện quyền bình đẳng dân tộc hãy xóa bỏ nạn người áp bức bóc lột người... ta phải xóa bỏ chế độ chiếm hữu tư nhân về tư liệu sản xuất\", từ nội dung này, ta suy ra được là \"Đáp án B\".",
+		explanation: "Dựa trên phần giải thích cuối tài liệu trắc nghiệm, để thực hiện quyền bình đẳng dân tộc cần xóa bỏ nạn người áp bức, bóc lột người; về cơ sở sâu xa là xóa bỏ chế độ chiếm hữu tư nhân về tư liệu sản xuất.",
 	},
 	{
 		question: "Chỉ ra luận điểm không chính xác?",
@@ -614,7 +614,7 @@ const cnxh_ptitBank = [
 			"“Liên hiệp giai cấp công nhân các dân tộc” là nội dung quan trọng nhất trong Cương lĩnh dân tộc của chủ nghĩa Mác - Lênin, bởi nó thể hiện rõ xu thế toàn cầu hóa và khu vực hóa trong vấn đề dân tộc",
 		],
 		correct: 3,
-		explanation: "Dựa trên trang số 87 của chương 6 của tài liệu, đã chỉ ra rằng: Liên hiệp công nhân các dân tộc nhằm đoàn kết đấu tranh và bảo vệ độc lập, tiến bộ xã hội, không phải chỉ vì xu thế toàn cầu hóa hay khu vực hóa. Từ nội dung này, ta suy ra được là \"Đáp án D\".",
+		explanation: "Dựa trên trang số 87 của chương 6 của tài liệu, liên hiệp công nhân các dân tộc nhằm đoàn kết đấu tranh, bảo vệ độc lập dân tộc và tiến bộ xã hội. Nội dung này không được xác lập chỉ vì xu thế toàn cầu hóa hay khu vực hóa.",
 	},
 	{
 		question: "Theo Chủ tịch Hồ Chí Minh, con đường để đấu tranh cho độc lập, tự do, chủ quyền của dân tộc Việt Nam là gì?",
@@ -625,7 +625,7 @@ const cnxh_ptitBank = [
 			"Cách mạng không ngừng",
 		],
 		correct: 2,
-		explanation: "Dựa trên kiến thức cơ bản xuyên suốt và trang số 16 của chương 1 của tài liệu, đã chỉ ra rằng: Độc lập dân tộc phải gắn liền với chủ nghĩa xã hội (chỉ có con đường cách mạng vô sản mới giải phóng triệt để dân tộc). Từ nội dung này, ta suy ra được là \"Đáp án C\".",
+		explanation: "Dựa trên kiến thức cơ bản xuyên suốt và trang số 16 của chương 1 của tài liệu, độc lập dân tộc phải gắn liền với chủ nghĩa xã hội; con đường cách mạng vô sản được xem là con đường giải phóng dân tộc triệt để.",
 	},
 	{
 		question: "Tôn giáo là gì?",
@@ -636,7 +636,7 @@ const cnxh_ptitBank = [
 			"Tôn giáo là một tổ chức xã hội, là đại diện cho quần chúng nhân dân lao động trong công xã nguyên thủy , là tổ chức tiền thân của nhà nước trong xã hội có sự phân chia giai cấp.",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 90 của chương 6 của tài liệu, chỉ ra rằng \"Tôn giáo là một thực thể xã hội... có niềm tin sâu sắc vào đấng siêu nhiên... có hệ thống giáo thuyết (giáo lý, giáo luật, lễ nghi)... có hệ thống cơ sở thờ tự, có tổ chức nhân sự\", từ nội dung này, ta suy ra được là \"Đáp án A\".",
+		explanation: "Dựa trên trang số 90 của chương 6 của tài liệu, tôn giáo là một thực thể xã hội có niềm tin sâu sắc vào đấng siêu nhiên, có hệ thống giáo thuyết gồm giáo lý, giáo luật, lễ nghi, đồng thời có cơ sở thờ tự và tổ chức nhân sự.",
 	},
 	{
 		question: "Yếu tố quan trọng nhất làm cho các tôn giáo tồn tại lâu dài là gì?",
@@ -647,7 +647,7 @@ const cnxh_ptitBank = [
 			"Niềm tin vào thế giới hiện thực",
 		],
 		correct: 1,
-		explanation: "Dựa trên trang số 90 của chương 6 của tài liệu, chỉ ra rằng tôn giáo có cốt lõi là \"có niềm tin sâu sắc vào đấng siêu nhiên, đấng tối cao, thần linh để tôn thờ (niềm tin tôn giáo)\", từ nội dung này, ta suy ra được là \"Đáp án B\".",
+		explanation: "Dựa trên trang số 90 của chương 6 của tài liệu, cốt lõi của tôn giáo là niềm tin sâu sắc vào đấng siêu nhiên, đấng tối cao hoặc thần linh để tôn thờ.",
 	},
 	{
 		question: "Một trong những đóng góp của V.I. Lênin đối với chủ nghĩa xã hội khoa học là gì?",
@@ -658,6 +658,6 @@ const cnxh_ptitBank = [
 			"Xây dựng lý luận về đảng của các dân tộc thuộc địa và phụ thuộc",
 		],
 		correct: 0,
-		explanation: "Dựa trên trang số 11 của chương 1 của tài liệu, chỉ ra rằng \"V.I.Lênin đã xây dựng lý luận về đảng cách mạng kiểu mới của giai cấp công nhân\", từ nội dung này, ta suy ra được là \"Đáp án a\".",
+		explanation: "Dựa trên trang số 11 của chương 1 của tài liệu, V.I. Lênin đã xây dựng lý luận về đảng cách mạng kiểu mới của giai cấp công nhân.",
 	},
 ];

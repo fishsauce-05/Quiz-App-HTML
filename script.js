@@ -115,14 +115,49 @@ function mergeRanges(ranges, textLength) {
     }, []);
 }
 
+function addPageHighlightRanges(ranges, explanation) {
+  if (!/^Dựa trên/i.test(explanation)) {
+    return;
+  }
+
+  addRegexRanges(
+    ranges,
+    explanation,
+    /trang(?:\s+số)?\s+\d+(?:\s*-\s*\d+)?(?:\s*,\s*\d+)?(?:\s+và\s+\d+)?(?:\s*\([^)]+\))?/gi
+  );
+}
+
+function addCnxhExplanationContentRange(ranges, explanation) {
+  if (!/^Dựa trên\s+/i.test(explanation)) {
+    return;
+  }
+
+  if (/(?:chỉ ra rằng|đã chỉ ra rằng)/i.test(explanation)) {
+    return;
+  }
+
+  const sourceDelimiter = /(?:của tài liệu(?:\s+và\s+phần giải thích cuối tài liệu trắc nghiệm)?|của giáo trình|của chương\s+\d+(?!\s+và\s+chương)|phần giải thích cuối tài liệu trắc nghiệm)\s*,\s*/gi;
+  let match;
+  let contentStart = -1;
+
+  while ((match = sourceDelimiter.exec(explanation)) !== null) {
+    contentStart = match.index + match[0].length;
+  }
+
+  if (contentStart > 0 && contentStart < explanation.length) {
+    addRange(ranges, contentStart, explanation.length);
+  }
+}
+
 function getExplanationHighlightRanges(explanation) {
   const ranges = [];
 
   addRegexRanges(ranges, explanation, /<([^<>]+)>/g, 1);
-  addRegexRanges(ranges, explanation, /trang số\s+[^,"]+?(?=\s+của\s+chương|\s+và\s+phần|,|\s+của\s+tài liệu)/gi);
+  addPageHighlightRanges(ranges, explanation);
   addRegexRanges(ranges, explanation, /chương\s+\d+/gi);
-  addRegexRanges(ranges, explanation, /phần Giải thích cuối tài liệu(?: Trắc nghiệm)?/gi);
-  addRegexRanges(ranges, explanation, /(chỉ ra rằng|đã chỉ ra rằng)\s*:?\s*([\s\S]*?)(?=,\s*từ nội dung này|\.?\s*Từ nội dung này|,\s*do các đáp án|$)/gi, 2);
+  addRegexRanges(ranges, explanation, /phần giải thích cuối tài liệu(?: trắc nghiệm)?/gi);
+  addRegexRanges(ranges, explanation, /(?:chỉ ra rằng|đã chỉ ra rằng)\s*:?\s*([\s\S]*?)(?=,\s*từ nội dung này|\.?\s*Từ nội dung này|,\s*do các đáp án|$)/gi, 1);
+  addCnxhExplanationContentRange(ranges, explanation);
   addRegexRanges(ranges, explanation, /ta suy ra được là\s+(["“][\s\S]*?["”]|[^.]+)/gi, 1);
 
   return mergeRanges(ranges, explanation.length);
