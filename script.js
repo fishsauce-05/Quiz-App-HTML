@@ -16,6 +16,7 @@ const resultBox = document.getElementById('resultBox');
 const finalScoreEl = document.getElementById('finalScore');
 const resultMessageEl = document.getElementById('resultMessage');
 const restartBtn = document.getElementById('restartBtn');
+const changeSubjectLink = document.querySelector('.secondary-btn');
 
 function getActiveSubject() {
   const requestedSubject = queryParams.get('subject') || 'web';
@@ -66,14 +67,116 @@ function shuffleAnswers(question) {
   };
 }
 
-function buildFeedbackMessage(statusMessage, explanation) {
+function addRange(ranges, start, end) {
+  if (start >= 0 && end > start) {
+    ranges.push({ start: start, end: end });
+  }
+}
+
+function addRegexRanges(ranges, text, regex, captureIndex) {
+  let match = regex.exec(text);
+
+  while (match) {
+    const value = match[captureIndex || 0];
+
+    if (value) {
+      const offset = match[0].indexOf(value);
+      addRange(ranges, match.index + offset, match.index + offset + value.length);
+    }
+
+    match = regex.exec(text);
+  }
+}
+
+function mergeRanges(ranges, textLength) {
+  return ranges
+    .map(function(range) {
+      return {
+        start: Math.max(0, Math.min(range.start, textLength)),
+        end: Math.max(0, Math.min(range.end, textLength))
+      };
+    })
+    .filter(function(range) {
+      return range.end > range.start;
+    })
+    .sort(function(firstRange, secondRange) {
+      return firstRange.start - secondRange.start || firstRange.end - secondRange.end;
+    })
+    .reduce(function(mergedRanges, range) {
+      const lastRange = mergedRanges[mergedRanges.length - 1];
+
+      if (lastRange && range.start <= lastRange.end) {
+        lastRange.end = Math.max(lastRange.end, range.end);
+      } else {
+        mergedRanges.push(range);
+      }
+
+      return mergedRanges;
+    }, []);
+}
+
+function getExplanationHighlightRanges(explanation) {
+  const ranges = [];
+
+  addRegexRanges(ranges, explanation, /<([^<>]+)>/g, 1);
+  addRegexRanges(ranges, explanation, /trang số\s+[^,"]+?(?=\s+của\s+chương|\s+và\s+phần|,|\s+của\s+tài liệu)/gi);
+  addRegexRanges(ranges, explanation, /chương\s+\d+/gi);
+  addRegexRanges(ranges, explanation, /phần Giải thích cuối tài liệu(?: Trắc nghiệm)?/gi);
+  addRegexRanges(ranges, explanation, /(chỉ ra rằng|đã chỉ ra rằng)\s*:?\s*([\s\S]*?)(?=,\s*từ nội dung này|\.?\s*Từ nội dung này|,\s*do các đáp án|$)/gi, 2);
+  addRegexRanges(ranges, explanation, /ta suy ra được là\s+(["“][\s\S]*?["”]|[^.]+)/gi, 1);
+
+  return mergeRanges(ranges, explanation.length);
+}
+
+function appendHighlightedExplanation(parent, explanation) {
+  const ranges = getExplanationHighlightRanges(explanation);
+  let currentIndex = 0;
+
+  ranges.forEach(function(range) {
+    if (range.start > currentIndex) {
+      parent.appendChild(document.createTextNode(explanation.slice(currentIndex, range.start)));
+    }
+
+    const highlight = document.createElement('span');
+    highlight.className = 'feedback-highlight';
+    highlight.textContent = explanation.slice(range.start, range.end);
+    parent.appendChild(highlight);
+    currentIndex = range.end;
+  });
+
+  if (currentIndex < explanation.length) {
+    parent.appendChild(document.createTextNode(explanation.slice(currentIndex)));
+  }
+}
+
+function renderFeedback(statusMessage, explanation, isCorrect) {
   const trimmedExplanation = String(explanation || '').trim();
+  const accentColor = isCorrect ? '#16a34a' : '#dc2626';
+
+  feedbackEl.replaceChildren();
+  feedbackEl.style.removeProperty('color');
+  feedbackEl.style.setProperty('--feedback-accent', accentColor);
+
+  const status = document.createElement('div');
+  status.className = 'feedback-status';
+  status.textContent = statusMessage;
+  feedbackEl.appendChild(status);
 
   if (!trimmedExplanation) {
-    return statusMessage;
+    return;
   }
 
-  return `${statusMessage}\nGiải thích: ${trimmedExplanation}`;
+  const explanationLine = document.createElement('div');
+  explanationLine.className = 'feedback-explanation';
+
+  const label = document.createElement('span');
+  label.className = 'feedback-explanation-label';
+  label.textContent = 'Giải thích';
+
+  explanationLine.appendChild(label);
+  explanationLine.appendChild(document.createTextNode(': '));
+  appendHighlightedExplanation(explanationLine, trimmedExplanation);
+  feedbackEl.appendChild(explanationLine);
 }
 
 function readLastOrder(storageKey) {
@@ -134,6 +237,9 @@ function startRound() {
 
   subjectTitleEl.textContent = `Quiz ${activeSubject.name}`;
   quizMetaEl.textContent = `${activeQuestions.length}/${subjectQuestions.length} câu`;
+  if (changeSubjectLink) {
+    changeSubjectLink.href = activeSubject.categoryPath || 'index.html';
+  }
   resultBox.style.display = 'none';
   quizBox.style.display = 'block';
   nextBtn.textContent = 'Câu tiếp theo';
@@ -180,13 +286,11 @@ function checkAnswer(selectedIndex, selectedButton) {
   if (selectedIndex === currentQuestion.correct) {
     score++;
     selectedButton.classList.add('correct');
-    feedbackEl.textContent = buildFeedbackMessage('Đúng rồi!', currentQuestion.explanation);
-    feedbackEl.style.color = '#16a34a';
+    renderFeedback('Đúng rồi!', currentQuestion.explanation, true);
   } else {
     selectedButton.classList.add('wrong');
     buttons[currentQuestion.correct].classList.add('correct');
-    feedbackEl.textContent = buildFeedbackMessage('Sai rồi!', currentQuestion.explanation);
-    feedbackEl.style.color = '#dc2626';
+    renderFeedback('Sai rồi!', currentQuestion.explanation, false);
   }
 
   nextBtn.style.display = 'inline-block';
@@ -198,17 +302,17 @@ function checkAnswer(selectedIndex, selectedButton) {
   }
 }
 
-function nextQuestion() {
+function nextQuestion(teacherName) {
   currentIndex++;
 
   if (currentIndex < activeQuestions.length) {
     showQuestion();
   } else {
-    showResult();
+    showResult(teacherName);
   }
 }
 
-function showResult() {
+function showResult(teacherName) {
   quizBox.style.display = 'none';
   resultBox.style.display = 'block';
   restartBtn.style.display = 'inline-block';
@@ -218,12 +322,12 @@ function showResult() {
   const percent = score / activeQuestions.length * 100;
 
   if (percent === 100) {
-    resultMessageEl.textContent = 'Ỉa lên đầu Hưng';
+    resultMessageEl.textContent = `Ỉa lên đầu ${teacherName}`;
   }
   else if (percent >= 80) {
-    resultMessageEl.textContent = 'Giỏi hơn Hưng rồi';
+    resultMessageEl.textContent = `Giỏi hơn ${teacherName} rồi`;
   } else if (percent >= 50) {
-    resultMessageEl.textContent = 'Gần giỏi bằng Hưng rồi';
+    resultMessageEl.textContent = `Gần giỏi bằng ${teacherName} rồi`;
   } else {
     resultMessageEl.textContent = 'Trượt mẹ môn rồi';
   }
@@ -233,7 +337,9 @@ function restartQuiz() {
   startRound();
 }
 
-nextBtn.addEventListener('click', nextQuestion);
+nextBtn.addEventListener('click', function() {
+  nextQuestion(getActiveSubject().teacherName);
+});
 restartBtn.addEventListener('click', restartQuiz);
 
 startRound();

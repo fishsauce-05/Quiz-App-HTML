@@ -322,9 +322,31 @@ h2 {
 
 #feedback {
   margin-top: 15px;
-  font-weight: bold;
   min-height: 24px;
-  white-space: pre-line;
+  color: #111827;
+  line-height: 1.5;
+}
+
+.feedback-status {
+  color: var(--feedback-accent);
+  font-weight: bold;
+}
+
+.feedback-explanation {
+  margin-top: 6px;
+  color: #111827;
+  font-weight: normal;
+}
+
+.feedback-explanation-label {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.feedback-highlight {
+  color: var(--feedback-accent);
+  font-weight: 600;
 }
 
 #nextBtn,
