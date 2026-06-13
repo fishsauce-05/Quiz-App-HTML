@@ -203,7 +203,7 @@ const cnxhChapter6 = [
          "Các dân tộc hoàn toàn bình đẳng",
          "Các dân tộc được quyền tự quyết",
          "Liên hiệp công nhân tất cả các dân tộc",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 87 của chương 6 của tài liệu, chỉ ra rằng Các dân tộc hoàn toàn bình đẳng;... Xóa bỏ tình trạng áp bức dân tộc.",
       "correct": 0
@@ -214,7 +214,7 @@ const cnxhChapter6 = [
          "Quyền bình đẳng trong quan hệ quốc tế",
          "Quyền làm chủ của mỗi dân tộc",
          "Quyền liên hiệp của các dân tộc",
-         "Cả A, B, C"
+         "Tất cả đáp án trên đều đúng"
       ],
       "explanation": "Dựa trên Trang 87 của chương 6 của tài liệu, chỉ ra rằng Là quyền của các dân tộc tự quyết định lấy vận mệnh của dân tộc mình, quyền tự lựa chọn chế độ chính trị và con đường phát triển...",
       "correct": 1
@@ -225,7 +225,7 @@ const cnxhChapter6 = [
          "Quyền can thiệp vào công việc nội bộ của các nước",
          "Quyền đòi ly khai, chia rẽ dân tộc",
          "Quyền tự quyết định con đường phát triển kinh tế, chính trị - xã hội",
-         "Cả A, B, C"
+         "Tất cả đáp án trên đều đúng"
       ],
       "explanation": "Dựa trên Trang 87 của chương 6 của tài liệu, chỉ ra rằng quyền tự lựa chọn chế độ chính trị và con đường phát triển của dân tộc mình.",
       "correct": 2
@@ -236,7 +236,7 @@ const cnxhChapter6 = [
          "Quyền can thiệp vào công việc nội bộ của các nước",
          "Quyền thực hiện chủ nghĩa bá quyền nước lớn",
          "Quyền tự nguyện liên hiệp lại với các dân tộc khác",
-         "Cả A, B, C"
+         "Tất cả đáp án trên đều đúng"
       ],
       "explanation": "Dựa trên Trang 87 của chương 6 của tài liệu, chỉ ra rằng quyền tự quyết bao gồm cả quyền tự do phân lập thành quốc gia độc lập và quyền tự nguyện liên hiệp với các dân tộc khác.",
       "correct": 2
@@ -247,7 +247,7 @@ const cnxhChapter6 = [
          "Các dân tộc hoàn toàn bình đẳng",
          "Các dân tộc được quyền tự quyết",
          "Liên hiệp công nhân tất cả các dân tộc",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 87 của chương 6 của tài liệu, chỉ ra rằng kiên quyết đấu tranh chống lại những mưu đồ lợi dụng vấn đề dân tộc làm chiêu bài để can thiệp công việc nội bộ của các nước và chia rẽ dân tộc\" (Nằm trong nguyên tắc Quyền tự quyết).",
       "correct": 1
@@ -280,7 +280,7 @@ const cnxhChapter6 = [
          "Quyền dân tộc tự quyết và quyền dân tộc liên hiệp",
          "Quyền bình đẳng dân tộc và quyền bình đẳng giai cấp",
          "Quyền bình đẳng dân tộc và quyền dân tộc tự quyết",
-         "Cả A, B, C"
+         "Tất cả đáp án trên đều đúng"
       ],
       "explanation": "Dựa trên Trang 90 của chương 6 của tài liệu, chỉ ra rằng Liên hiệp công nhân tất cả các dân tộc... Ý nghĩa: là nội dung chủ yếu và giải pháp quan trọng để liên kết các nội dung trong Cương lĩnh dân tộc thành một chỉnh thể.",
       "correct": 2
@@ -291,7 +291,7 @@ const cnxhChapter6 = [
          "Các dân tộc hoàn toàn bình đẳng",
          "Các dân tộc được quyền tự quyết",
          "Liên hiệp công nhân tất cả các dân tộc",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 87 của chương 6 của tài liệu, chỉ ra rằng Khắc phục sự chênh lệch về trình độ phát triển kinh tế, văn hoá, xã hội giữa các dân tộc... là điều kiện để đảm bảo việc thực hiện quyền bình đẳng.",
       "correct": 0
@@ -302,7 +302,7 @@ const cnxhChapter6 = [
          "Các dân tộc hoàn toàn bình đẳng",
          "Các dân tộc được quyền tự quyết",
          "Liên hiệp công nhân tất cả các dân tộc",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 87 của chương 6 của tài liệu, chỉ ra rằng Các dân tộc đều có nghĩa vụ và quyền lợi ngang nhau trên tất cả các lĩnh vực của đời sống xã hội",
       "correct": 0
@@ -313,7 +313,7 @@ const cnxhChapter6 = [
          "Các dân tộc hoàn toàn bình đẳng",
          "Các dân tộc được quyền tự quyết",
          "Liên hiệp công nhân tất cả các dân tộc",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 87 của chương 6 của tài liệu, chỉ ra rằng nội dung của nguyên tắc Các dân tộc hoàn toàn bình đẳng yêu cầu xóa bỏ mọi sự phân biệt, áp bức và đặc quyền dân tộc.",
       "correct": 0
@@ -324,7 +324,7 @@ const cnxhChapter6 = [
          "Các dân tộc hoàn toàn bình đẳng",
          "Các dân tộc được quyền tự quyết",
          "Liên hiệp công nhân tất cả các dân tộc",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 87 của chương 6 của tài liệu, chỉ ra rằng Đấu tranh chống chủ nghĩa phân biệt chủng tộc, chủ nghĩa bá quyền nước lớn... là biểu hiện của quyền bình đẳng.",
       "correct": 0
@@ -346,7 +346,7 @@ const cnxhChapter6 = [
          "Quan điểm của chủ nghĩa Mác - Lênin",
          "Nguyên nhân tồn tại của tôn giáo",
          "Nguồn gốc của tôn giáo",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 92 của chương 6 của tài liệu, chỉ ra rằng Quan điểm lịch sử cụ thể trong giải quyết vấn đề tín ngưỡng, tôn giáo là một trong những nguyên tắc cốt lõi của chủ nghĩa Mác - Lênin.",
       "correct": 0
@@ -489,7 +489,7 @@ const cnxhChapter6 = [
          "Tôn giáo chứa đựng nhiều giá trị chưa phù hợp với đạo lý con người",
          "Tôn giáo đã trở thành niềm tin, phong tục tập quán của một bộ phận nhân dân",
          "Tôn giáo đáp ứng được nhu cầu vật chất của nhân dân",
-         "Cả A, B, C"
+         "Tất cả đáp án trên đều đúng"
       ],
       "explanation": "Dựa trên Trang 92 của chương 6 của tài liệu, chỉ ra rằng tín ngưỡng, tôn giáo đã in đậm trong đời sống tinh thần, tâm lý, phong tục tập quán của một bộ phận nhân dân",
       "correct": 1
@@ -500,7 +500,7 @@ const cnxhChapter6 = [
          "Trình độ dân trí của nhân dân chưa được nâng cao",
          "Sự tồn tại của nền kinh tế nhiều thành phần với những lợi ích khác nhau",
          "Những giá trị đạo đức, văn hóa của tôn giáo phù hợp với chủ nghĩa xã hội",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 91 của chương 6 của tài liệu, sự hạn chế trong nhận thức và sự bất lực của con người trước những sức mạnh tự phát của giới tự nhiên và xã hội là do khoa học và trình độ dân trí chưa phát triển đồng đều ở mọi bộ phận nhân dân.",
       "correct": 0
@@ -511,7 +511,7 @@ const cnxhChapter6 = [
          "Tôn giáo chưa đáp ứng được nhu cầu văn hóa tinh thần nào của nhân dân",
          "Tôn giáo đáp ứng được phần nào nhu cầu văn hóa tinh thần của nhân dân",
          "Tôn giáo đã đáp ứng được mọi nhu cầu văn hóa tinh thần của nhân dân",
-         "Cả A, B, C"
+         "Tất cả đáp án trên đều đúng"
       ],
       "explanation": "Dựa trên Trang 93 của chương 6 của tài liệu, chỉ ra rằng Tín ngưỡng, tôn giáo là nhu cầu tinh thần của một bộ phận nhân dân, đang và sẽ tồn tại cùng dân tộc...",
       "correct": 1
@@ -522,7 +522,7 @@ const cnxhChapter6 = [
          "Tôn giáo có ý nghĩa giáo dục ý thức cộng đồng, lối sống của nhân dân",
          "Tôn giáo bị thế lực phản động lợi dụng để chống phá chủ nghĩa xã hội",
          "Những giá trị đạo đức, văn hóa của tôn giáo phù hợp với chủ nghĩa xã hội",
-         "Cả A, B, C"
+         "Tất cả đáp án trên đều đúng"
       ],
       "explanation": "Dựa trên Trang 93 của chương 6 của tài liệu, chỉ ra rằng Đảng và Nhà nước ta chủ trương Giữ gìn và phát huy những giá trị tích cực của tôn giáo (chính là những giá trị đạo đức, văn hóa phù hợp với xã hội mới).",
       "correct": 2
@@ -555,7 +555,7 @@ const cnxhChapter6 = [
          "Thực hiện đoàn kết toàn dân tộc",
          "Thực hiện đoàn kết các tôn giáo",
          "Thực hiện đoàn kết toàn dân tộc, đoàn kết các tôn giáo",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 93 của chương 6 của tài liệu, chỉ ra rằng Đoàn kết đồng bào theo các tôn giáo khác nhau; đoàn kết đồng bào theo tôn giáo và đồng bào không theo tôn giáo.",
       "correct": 2
@@ -566,7 +566,7 @@ const cnxhChapter6 = [
          "Chính trị và tư tưởng",
          "Chính trị và xã hội",
          "Văn hóa và tư tưởng",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 92 của chương 6 của tài liệu, chỉ ra rằng Phân biệt hai mặt chính trị và tư tưởng; tín ngưỡng tôn giáo và lợi dụng tín ngưỡng tôn giáo trong quá trình giải quyết vấn đề tôn giáo",
       "correct": 0
@@ -577,7 +577,7 @@ const cnxhChapter6 = [
          "Nguồn gốc của tôn giáo",
          "Quan điểm của chủ nghĩa Mác - Lênin",
          "Nguyên nhân tồn tại của tôn giáo",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 92 của chương 6 của tài liệu, chỉ ra rằng Nguyên tắc giải quyết vấn đề tôn giáo trong thời kì quá độ lên chủ nghĩa xã hội: ... Phân biệt hai mặt chính trị và tư tưởng...",
       "correct": 1
@@ -588,7 +588,7 @@ const cnxhChapter6 = [
          "Quan điểm toàn diện",
          "Quan điểm phát triển",
          "Quan điểm lịch sử - cụ thể",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 92 của chương 6 của tài liệu, chỉ ra rằng Quan điểm lịch sử cụ thể trong giải quyết vấn đề tín ngưỡng, tôn giáo",
       "correct": 2
@@ -610,7 +610,7 @@ const cnxhChapter6 = [
          "Tôn trọng tự do tín ngưỡng và không tín ngưỡng của nhân dân",
          "Phân biệt rõ hai mặt chính trị và tư tưởng trong vấn đề tôn giáo",
          "Phải có quan điểm lịch sử - cụ thể khi giải quyết vấn đề tôn giáo",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 92 của chương 6 của tài liệu, chỉ ra rằng Tôn trọng, bảo đảm quyền tự do tín ngưỡng và không tín ngưỡng của nhân dân.",
       "correct": 0
@@ -632,7 +632,7 @@ const cnxhChapter6 = [
          "Sự lợi dụng tôn giáo",
          "Sự tín ngưỡng trong tôn giáo",
          "Sự cuồng tín tôn giáo",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 92 của chương 6 của tài liệu, chỉ ra rằng Mặt tư tưởng biểu hiện sự khác nhau về niềm tin, mức độ tin giữa những người có tín ngưỡng tôn giáo và những người không theo tôn giáo...",
       "correct": 1
@@ -643,7 +643,7 @@ const cnxhChapter6 = [
          "Sự cuồng tín tôn giáo",
          "Sự lợi dụng tôn giáo",
          "Sự tín ngưỡng trong tôn giáo",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên Trang 92 của chương 6 của tài liệu, chỉ ra rằng Mặt chính trị phản ánh mối quan hệ giữa tiến bộ với phản tiến bộ... mâu thuẫn giữa những thế lực lợi dụng tôn giáo chống lại sự nghiệp cách mạng (tức là sự lợi dụng tôn giáo).",
       "correct": 1
