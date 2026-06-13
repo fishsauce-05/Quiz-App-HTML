@@ -17,7 +17,7 @@ body.home-page {
 body.quiz-page {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 24px;
 }
 
@@ -195,7 +195,8 @@ h2 {
 .primary-btn,
 .secondary-btn,
 #nextBtn,
-#restartBtn {
+#restartBtn,
+#retryWrongBtn {
   min-height: 44px;
   padding: 12px 18px;
   border-radius: 8px;
@@ -226,6 +227,10 @@ h2 {
 #nextBtn:hover,
 #restartBtn:hover {
   background: #1d4ed8;
+}
+
+#retryWrongBtn:hover {
+  background: #15803d;
 }
 
 .quiz-container {
@@ -350,15 +355,21 @@ h2 {
 }
 
 #nextBtn,
-#restartBtn {
+#restartBtn,
+#retryWrongBtn {
   margin-top: 18px;
   border: none;
   background: #2563eb;
   color: #ffffff;
 }
 
+#retryWrongBtn {
+  background: #16a34a;
+}
+
 #nextBtn,
 #restartBtn,
+#retryWrongBtn,
 #resultBox {
   display: none;
 }
@@ -374,10 +385,121 @@ h2 {
   color: #2563eb;
 }
 
+.result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.result-actions #restartBtn,
+.result-actions #retryWrongBtn {
+  margin-top: 0;
+}
+
 .secondary-btn {
   display: inline-flex;
   align-items: center;
   margin-left: 12px;
+}
+
+.result-actions .secondary-btn {
+  margin-left: 0;
+}
+
+#reviewBox {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+#reviewBox h3 {
+  margin: 0 0 14px;
+  color: #111827;
+  font-size: 20px;
+}
+
+#reviewList {
+  display: grid;
+  gap: 12px;
+}
+
+.review-item {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #94a3b8;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.review-item.correct {
+  border-left-color: #22c55e;
+}
+
+.review-item.wrong {
+  border-left-color: #ef4444;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.review-number {
+  color: #334155;
+  font-weight: bold;
+}
+
+.review-status {
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.review-status.correct {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.review-status.wrong {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.review-question {
+  margin-bottom: 10px;
+  color: #111827;
+  font-weight: bold;
+  line-height: 1.45;
+}
+
+.review-answer,
+.review-explanation {
+  margin-bottom: 8px;
+  color: #334155;
+  line-height: 1.45;
+}
+
+.review-answer:last-child,
+.review-explanation:last-child {
+  margin-bottom: 0;
+}
+
+.review-correct-text {
+  color: #166534;
+  font-weight: bold;
+}
+
+.review-wrong-text {
+  color: #991b1b;
+  font-weight: bold;
 }
 
 @media (max-width: 640px) {
@@ -425,5 +547,9 @@ h2 {
 
   .secondary-btn {
     margin: 12px 0 0;
+  }
+
+  .result-actions .secondary-btn {
+    margin-top: 0;
   }
 }

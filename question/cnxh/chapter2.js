@@ -981,7 +981,7 @@ const cnxhChapter2 = [
 	{
 		question: "Giai cấp công nhân là sản phẩm của nền đại công nghiệp trong phương thức sản xuất tư bản chủ nghĩa, là chủ thể của quá trình sản xuất vật chất hiện đại, vì thế, giai cấp công nhân là lực lượng […].",
 		answers: [
-			"phá vỡ quan hệ sản xuất phong kiến, giành chính quyền về tay giai cấp mình",
+			"Phá vỡ quan hệ sản xuất phong kiến, giành chính quyền về tay giai cấp mình",
 			"phá vỡ quan hệ sản xuất xã hội chủ nghĩa, giành chính quyền về tay giai cấp mình",
 			"phá vỡ quan hệ sản xuất tư bản chủ nghĩa, giành chính quyền cho giai cấp nông dân",
 			"phá vỡ quan hệ sản xuất tư bản chủ nghĩa, giành chính quyền về tay giai cấp mình",

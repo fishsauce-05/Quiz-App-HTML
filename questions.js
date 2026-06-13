@@ -19,6 +19,11 @@ addQuestionBank('jqueryPractice', typeof jqueryQ === 'undefined' ? null : jquery
 addQuestionBank('cnxhPTIT', typeof cnxhPtitBank === 'undefined' ? null : cnxhPtitBank);
 addQuestionBank('cnxhChapter1', typeof cnxhChapter1 === 'undefined' ? null : cnxhChapter1);
 addQuestionBank('cnxhChapter2', typeof cnxhChapter2 === 'undefined' ? null : cnxhChapter2);
+addQuestionBank('cnxhChapter3', typeof cnxhChapter3 === 'undefined' ? null : cnxhChapter3);
+addQuestionBank('cnxhChapter4', typeof cnxhChapter4 === 'undefined' ? null : cnxhChapter4);
+addQuestionBank('cnxhChapter5', typeof cnxhChapter5 === 'undefined' ? null : cnxhChapter5);
+addQuestionBank('cnxhChapter6', typeof cnxhChapter6 === 'undefined' ? null : cnxhChapter6);
+addQuestionBank('cnxhChapter7', typeof cnxhChapter7 === 'undefined' ? null : cnxhChapter7);
 
 const webPracticeQuestionBankIds = [
   'htmlPractice',
@@ -132,6 +137,46 @@ const subjectConfigs = [
     name: 'CNXH Chương 2',
     shortName: 'CH2',
     description: 'Chương 2 - Giai cấp công nhân và phong trào công nhân quốc tế',
+    categoryPath: 'index/cnxh.html',
+    teacherName: cnxhTeacherName
+  },
+  {
+    id: 'cnxhChapter3',
+    name: 'CNXH Chương 3',
+    shortName: 'CH3',
+    description: 'Chương 3 - Thời kỳ quá độ từ chủ nghĩa tư bản lên chủ nghĩa xã hội',
+    categoryPath: 'index/cnxh.html',
+    teacherName: cnxhTeacherName
+  },
+  {
+    id: 'cnxhChapter4',
+    name: 'CNXH Chương 4',
+    shortName: 'CH4',
+    description: 'Chương 4 - Dân chủ xã hội chủ nghĩa và Nhà nước xã hội chủ nghĩa',
+    categoryPath: 'index/cnxh.html',
+    teacherName: cnxhTeacherName
+  },
+  {
+    id: 'cnxhChapter5',
+    name: 'CNXH Chương 5',
+    shortName: 'CH5',
+    description: 'Chương 5 - Cơ cấu xã hội - giai cấp và liên minh giai cấp, tầng lớp',
+    categoryPath: 'index/cnxh.html',
+    teacherName: cnxhTeacherName
+  },
+  {
+    id: 'cnxhChapter6',
+    name: 'CNXH Chương 6',
+    shortName: 'CH6',
+    description: 'Chương 6 - Vấn đề dân tộc và tôn giáo trong thời kỳ quá độ',
+    categoryPath: 'index/cnxh.html',
+    teacherName: cnxhTeacherName
+  },
+  {
+    id: 'cnxhChapter7',
+    name: 'CNXH Chương 7',
+    shortName: 'CH7',
+    description: 'Chương 7 - Vấn đề gia đình trong thời kỳ quá độ',
     categoryPath: 'index/cnxh.html',
     teacherName: cnxhTeacherName
   }

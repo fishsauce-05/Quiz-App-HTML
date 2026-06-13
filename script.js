@@ -2,6 +2,8 @@ let currentIndex = 0;
 let score = 0;
 let answered = false;
 let activeQuestions = [];
+let answerRecords = [];
+let currentRoundLabel = '';
 
 const queryParams = new URLSearchParams(window.location.search);
 const subjectTitleEl = document.getElementById('subjectTitle');
@@ -16,6 +18,9 @@ const resultBox = document.getElementById('resultBox');
 const finalScoreEl = document.getElementById('finalScore');
 const resultMessageEl = document.getElementById('resultMessage');
 const restartBtn = document.getElementById('restartBtn');
+const retryWrongBtn = document.getElementById('retryWrongBtn');
+const reviewBoxEl = document.getElementById('reviewBox');
+const reviewListEl = document.getElementById('reviewList');
 const changeSubjectLink = document.querySelector('.secondary-btn');
 
 function getActiveSubject() {
@@ -261,6 +266,37 @@ function buildQuestionSet(subjectId, limit) {
   });
 }
 
+function buildRetryQuestionSet(records) {
+  return records.map(function(record) {
+    return shuffleAnswers(record);
+  });
+}
+
+function getWrongRecords() {
+  return answerRecords.filter(function(record) {
+    return record && !record.isCorrect;
+  });
+}
+
+function formatAnswerLabel(index, answer) {
+  if (index < 0 || typeof answer === 'undefined') {
+    return 'Chưa chọn';
+  }
+
+  return `${String.fromCharCode(65 + index)}. ${answer}`;
+}
+
+function createAnswerRecord(question, selectedIndex) {
+  return {
+    question: question.question,
+    answers: question.answers.slice(),
+    correct: question.correct,
+    explanation: question.explanation || '',
+    selected: selectedIndex,
+    isCorrect: selectedIndex === question.correct
+  };
+}
+
 function startRound() {
   const activeSubject = getActiveSubject();
   const subjectQuestions = questionBank[activeSubject.id] || [];
@@ -268,6 +304,8 @@ function startRound() {
 
   currentIndex = 0;
   score = 0;
+  answerRecords = [];
+  currentRoundLabel = '';
   activeQuestions = buildQuestionSet(activeSubject.id, questionLimit);
 
   subjectTitleEl.textContent = `Quiz ${activeSubject.name}`;
@@ -275,6 +313,27 @@ function startRound() {
   if (changeSubjectLink) {
     changeSubjectLink.href = activeSubject.categoryPath || 'index.html';
   }
+  resultBox.style.display = 'none';
+  quizBox.style.display = 'block';
+  nextBtn.textContent = 'Câu tiếp theo';
+
+  showQuestion();
+}
+
+function startWrongRound() {
+  const wrongRecords = getWrongRecords();
+
+  if (!wrongRecords.length) {
+    return;
+  }
+
+  currentIndex = 0;
+  score = 0;
+  answerRecords = [];
+  currentRoundLabel = 'Làm lại câu sai';
+  activeQuestions = buildRetryQuestionSet(wrongRecords);
+
+  quizMetaEl.textContent = `${activeQuestions.length} câu cần làm lại`;
   resultBox.style.display = 'none';
   quizBox.style.display = 'block';
   nextBtn.textContent = 'Câu tiếp theo';
@@ -291,7 +350,7 @@ function showQuestion() {
   const currentQuestion = activeQuestions[currentIndex];
 
   progressEl.textContent = `${currentIndex + 1}/${activeQuestions.length}`;
-  questionEl.textContent = `Câu ${currentIndex + 1}. ${currentQuestion.question}`;
+  questionEl.textContent = `${currentRoundLabel ? `${currentRoundLabel} - ` : ''}Câu ${currentIndex + 1}. ${currentQuestion.question}`;
 
   currentQuestion.answers.forEach(function(answer, index) {
     const button = document.createElement('button');
@@ -313,12 +372,15 @@ function checkAnswer(selectedIndex, selectedButton) {
 
   const currentQuestion = activeQuestions[currentIndex];
   const buttons = document.querySelectorAll('.answer-btn');
+  const isCorrect = selectedIndex === currentQuestion.correct;
+
+  answerRecords[currentIndex] = createAnswerRecord(currentQuestion, selectedIndex);
 
   buttons.forEach(function(button) {
     button.disabled = true;
   });
 
-  if (selectedIndex === currentQuestion.correct) {
+  if (isCorrect) {
     score++;
     selectedButton.classList.add('correct');
     renderFeedback('Đúng rồi!', currentQuestion.explanation, true);
@@ -347,10 +409,83 @@ function nextQuestion(teacherName) {
   }
 }
 
+function renderReviewItem(record, index) {
+  const item = document.createElement('article');
+  item.className = `review-item ${record.isCorrect ? 'correct' : 'wrong'}`;
+
+  const header = document.createElement('div');
+  header.className = 'review-header';
+
+  const number = document.createElement('span');
+  number.className = 'review-number';
+  number.textContent = `Câu ${index + 1}`;
+
+  const status = document.createElement('span');
+  status.className = `review-status ${record.isCorrect ? 'correct' : 'wrong'}`;
+  status.textContent = record.isCorrect ? 'Đúng' : 'Sai';
+
+  header.appendChild(number);
+  header.appendChild(status);
+
+  const question = document.createElement('p');
+  question.className = 'review-question';
+  question.textContent = record.question;
+
+  const selectedAnswer = document.createElement('p');
+  selectedAnswer.className = 'review-answer';
+  selectedAnswer.appendChild(document.createTextNode('Bạn chọn: '));
+
+  const selectedValue = document.createElement('span');
+  selectedValue.className = record.isCorrect ? 'review-correct-text' : 'review-wrong-text';
+  selectedValue.textContent = formatAnswerLabel(record.selected, record.answers[record.selected]);
+  selectedAnswer.appendChild(selectedValue);
+
+  const correctAnswer = document.createElement('p');
+  correctAnswer.className = 'review-answer';
+  correctAnswer.appendChild(document.createTextNode('Đáp án đúng: '));
+
+  const correctValue = document.createElement('span');
+  correctValue.className = 'review-correct-text';
+  correctValue.textContent = formatAnswerLabel(record.correct, record.answers[record.correct]);
+  correctAnswer.appendChild(correctValue);
+
+  item.appendChild(header);
+  item.appendChild(question);
+  item.appendChild(selectedAnswer);
+  item.appendChild(correctAnswer);
+
+  if (record.explanation.trim()) {
+    const explanation = document.createElement('p');
+    explanation.className = 'review-explanation';
+
+    const label = document.createElement('span');
+    label.className = 'feedback-explanation-label';
+    label.textContent = 'Giải thích';
+
+    explanation.appendChild(label);
+    explanation.appendChild(document.createTextNode(': '));
+    appendHighlightedExplanation(explanation, record.explanation);
+    item.appendChild(explanation);
+  }
+
+  return item;
+}
+
+function renderReview() {
+  reviewListEl.replaceChildren();
+
+  answerRecords.forEach(function(record, index) {
+    if (record) {
+      reviewListEl.appendChild(renderReviewItem(record, index));
+    }
+  });
+}
+
 function showResult(teacherName) {
   quizBox.style.display = 'none';
   resultBox.style.display = 'block';
   restartBtn.style.display = 'inline-block';
+  renderReview();
 
   finalScoreEl.textContent = `${score}/${activeQuestions.length}`;
 
@@ -366,6 +501,10 @@ function showResult(teacherName) {
   } else {
     resultMessageEl.textContent = 'Trượt mẹ môn rồi';
   }
+
+  const wrongRecords = getWrongRecords();
+  retryWrongBtn.style.display = wrongRecords.length ? 'inline-block' : 'none';
+  reviewBoxEl.style.display = answerRecords.length ? 'block' : 'none';
 }
 
 function restartQuiz() {
@@ -376,5 +515,6 @@ nextBtn.addEventListener('click', function() {
   nextQuestion(getActiveSubject().teacherName);
 });
 restartBtn.addEventListener('click', restartQuiz);
+retryWrongBtn.addEventListener('click', startWrongRound);
 
 startRound();
