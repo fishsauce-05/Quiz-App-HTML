@@ -60,7 +60,7 @@ cnxhChapter5 = [
          "Giai cấp công nhân",
          "Giai cấp nông dân",
          "Đội ngũ trí thức, đội ngũ doanh nhân",
-         "Cả A, B, C"
+         "Tất cả nội dung đã nêu đều đúng"
       ],
       "explanation": "Dựa trên nội dung Bài giảng Chương 5, cơ cấu xã hội giai cấp ở Việt Nam hiện nay rất đa dạng, bao gồm công nhân, nông dân, trí thức, doanh nhân và các tầng lớp khác.",
       "correct": 3
@@ -104,7 +104,7 @@ cnxhChapter5 = [
          "Công nhân truyền thống",
          "Công nhân tri thức",
          "Công nhân áo xanh",
-         "Cả A, B, C đều sai"
+         "Tất cả đáp án trên đều sai"
       ],
       "explanation": "Dựa trên xu hướng biến đổi cơ cấu xã hội, lực lượng công nhân tri thức (công nhân áo trắng) sẽ ngày càng gia tăng và đóng vai trò nòng cốt trong nền kinh tế 4.0.",
       "correct": 1
