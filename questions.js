@@ -43,6 +43,24 @@ if (webPracticeQuestionBankIds.every(function(subjectId) {
   });
 }
 
+const cnxhChapterQuestionBankIds = [
+  'cnxhChapter1',
+  'cnxhChapter2',
+  'cnxhChapter3',
+  'cnxhChapter4',
+  'cnxhChapter5',
+  'cnxhChapter6',
+  'cnxhChapter7'
+];
+
+if (cnxhChapterQuestionBankIds.every(function(subjectId) {
+  return Array.isArray(questionBank[subjectId]);
+})) {
+  questionBank.cnxhTotalReview = cnxhChapterQuestionBankIds.flatMap(function(subjectId) {
+    return questionBank[subjectId];
+  });
+}
+
 const subjectConfigs = [
   {
     id: 'web',
@@ -121,6 +139,14 @@ const subjectConfigs = [
     name: 'Chủ nghĩa xã hội khoa học PTIT',
     shortName: 'CNXH',
     description: 'Bộ câu hỏi Chủ nghĩa xã hội khoa học PTIT',
+    categoryPath: 'index/cnxh.html',
+    teacherName: cnxhTeacherName
+  },
+  {
+    id: 'cnxhTotalReview',
+    name: 'Total Review',
+    shortName: 'TOTAL',
+    description: 'Trộn toàn bộ câu hỏi từ chương 1-7',
     categoryPath: 'index/cnxh.html',
     teacherName: cnxhTeacherName
   },
