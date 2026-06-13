@@ -605,7 +605,7 @@ const cnxhChapter3 = [
 		explanation: "Dựa trên Trang 46 của chương 3 của tài liệu, chỉ ra rằng Trên lĩnh vực kinh tế: Thời kỳ quá độ từ chủ nghĩa tư bản lên chủ nghĩa xã hội, về phương diện kinh tế, tất yếu tồn tại nền kinh tế nhiều thành phần.",
 	},
 	{
-		question: "Nội dung nào dưới đây không phải là đặc điểm trên lĩnh vực chính trị của thời kì quá độ lên chủ nghĩa xã hội?",
+		question: "Nội dung nào dưới đây là đặc điểm trên lĩnh vực chính trị của thời kì quá độ lên chủ nghĩa xã hội?",
 		answers: [
 			"Thiết lập, tăng cường chuyên chính vô sản.",
 			"Tồn tại nhiều tư tưởng khác nhau.",
