@@ -399,6 +399,61 @@ function checkAnswer(selectedIndex, selectedButton) {
   }
 }
 
+function isTypingTarget(target) {
+  const tagName = target && target.tagName;
+
+  return target && (
+    target.isContentEditable ||
+    tagName === 'INPUT' ||
+    tagName === 'TEXTAREA' ||
+    tagName === 'SELECT'
+  );
+}
+
+function isQuizActive() {
+  return quizBox.style.display !== 'none' && activeQuestions.length > 0;
+}
+
+function getAnswerIndexFromKey(event) {
+  if (/^[1-9]$/.test(event.key)) {
+    return Number.parseInt(event.key, 10) - 1;
+  }
+
+  const numpadMatch = /^Numpad([1-9])$/.exec(event.code);
+  if (numpadMatch) {
+    return Number.parseInt(numpadMatch[1], 10) - 1;
+  }
+
+  return -1;
+}
+
+function handleQuizShortcut(event) {
+  if (event.repeat || isTypingTarget(event.target) || !isQuizActive()) {
+    return;
+  }
+
+  if (event.key === 'Enter') {
+    if (answered && nextBtn.style.display !== 'none') {
+      event.preventDefault();
+      nextQuestion(getActiveSubject().teacherName);
+    }
+
+    return;
+  }
+
+  if (answered) {
+    return;
+  }
+
+  const selectedIndex = getAnswerIndexFromKey(event);
+  const answerButtons = document.querySelectorAll('.answer-btn');
+
+  if (selectedIndex >= 0 && selectedIndex < answerButtons.length) {
+    event.preventDefault();
+    checkAnswer(selectedIndex, answerButtons[selectedIndex]);
+  }
+}
+
 function nextQuestion(teacherName) {
   currentIndex++;
 
@@ -514,6 +569,7 @@ function restartQuiz() {
 nextBtn.addEventListener('click', function() {
   nextQuestion(getActiveSubject().teacherName);
 });
+document.addEventListener('keydown', handleQuizShortcut);
 restartBtn.addEventListener('click', restartQuiz);
 retryWrongBtn.addEventListener('click', startWrongRound);
 
