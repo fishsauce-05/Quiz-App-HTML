@@ -580,7 +580,7 @@ const cnxhChapter2 = [
 			"Xoá bỏ tận gốc chế độ nô lệ làm thuê",
 		],
 		correct: 0,
-		explanation: "Dựa trên Trang 24-25 của chương 2 của tài liệu, Sứ mệnh lịch sử tổng quát nêu rõ: xóa bỏ chế độ người bóc lột người, giải phóng giai cấp công nhân, nhân dân lao động với mục tiêu cao nhất là giải phóng con người (đáp án A gần với ý giải phóng toàn diện con người khỏi áp bức nhất theo Test bank).",
+		explanation: "Dựa trên Trang 24-25 của chương 2 của tài liệu, Sứ mệnh lịch sử tổng quát nêu rõ: xóa bỏ chế độ người bóc lột người, giải phóng giai cấp công nhân, nhân dân lao động với mục tiêu cao nhất là giải phóng con người.",
 	},
 	{
 		question: "Quan điểm nào sau đây phản ánh đúng về tư tưởng việc xoá bỏ hình thái kinh tế — xã hội tư bản chủ nghĩa?",
