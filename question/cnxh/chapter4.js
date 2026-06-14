@@ -340,7 +340,7 @@ const cnxhChapter4 = [
 			"quyền tự do không giới hạn của mỗi người.",
 			"quyền lực thuộc về nhân dân.",
 		],
-		correct: 0,
+		correct: 3,
 		explanation: "Dựa trên Trang 56 của chương 4 của tài liệu, dân chủ phản ánh khát vọng hướng tới tự do, bình đẳng của con người từ xa xưa.",
 	},
 	{
